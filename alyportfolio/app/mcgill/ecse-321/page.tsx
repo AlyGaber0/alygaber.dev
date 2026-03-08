@@ -28,7 +28,7 @@ export default function Ecse321() {
           {course.description}
         </motion.p>
 
-        <div className="flex flex-wrap gap-2 text-xs font-mono mt-4 text-zinc-500">
+        {/* <div className="flex flex-wrap gap-2 text-xs font-mono mt-4 text-zinc-500">
           {["Python", "Lego EV3", "Technical Documentation"].map((tag) => (
             <span
               key={tag}
@@ -37,7 +37,7 @@ export default function Ecse321() {
               {tag}
             </span>
           ))}
-        </div>
+        </div> */}
 
         <hr className="border-zinc-800 mt-3" />
       </div>
