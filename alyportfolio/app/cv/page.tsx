@@ -15,9 +15,17 @@ const cvData = [
       "Built a stateless proxy to Cloudflare enabling automated DNS failovers via internal dashboards.",
       "Migrated container registry from Nexus to Harbor; implemented image retagging to reduce deployment pipeline times.",
       "Monitored and troubleshot production issues using Grafana and OpenSearch; patched bugs including a Zendesk integration failure.",
-      "Built v1 of an internal AI monitoring tool: integrated LLM provider APIs and designed the interaction layer and UX."
+      "Built v1 of an internal AI monitoring tool: integrated LLM provider APIs and designed the interaction layer and UX.",
     ],
-    tags: ["Spring Boot", "Angular", "Kafka", "Grafana", "OpenSearch", "Harbor", "Cloudflare"]
+    tags: [
+      "Spring Boot",
+      "Angular",
+      "Kafka",
+      "Grafana",
+      "OpenSearch",
+      "Harbor",
+      "Cloudflare",
+    ],
   },
   {
     role: "Software Engineering Intern",
@@ -27,10 +35,10 @@ const cvData = [
       "Developed responsive web applications using React.",
       "Designed and implemented systems for validating, developing, and deploying client-facing API documentation.",
       "Implemented and tested financial algorithms for private equity.",
-      "Collaborated on feature design and technical implementation for portfolio optimization."
+      "Collaborated on feature design and technical implementation for portfolio optimization.",
     ],
-    tags: []
-  }
+    tags: [],
+  },
 ];
 
 export default function CvPage() {
@@ -42,32 +50,48 @@ export default function CvPage() {
       className="flex flex-col gap-12 pb-24"
     >
       <section>
-        <h1 className="text-4xl font-bold text-white mb-6 font-mono">Curriculum Vitae</h1>
+        <motion.h1
+          layoutId="main-page-title"
+          className="text-4xl font-bold text-white mb-6 font-mono"
+        >
+          Curriculum Vitae
+        </motion.h1>
+
         <p className="text-base leading-relaxed text-zinc-400">
-          Software engineer focused on web applications and distributed systems. I leverage AI and modern 
-          tools to move fast—but prefer simple, well-architected solutions over clever ones.
+          Software engineer focused on web applications and distributed systems.
+          I leverage AI and modern tools to move fast—but prefer simple,
+          well-architected solutions over clever ones.
         </p>
       </section>
 
       <hr className="border-zinc-800" />
 
       <section>
-        <h2 className="text-xs font-mono text-zinc-600 uppercase tracking-widest mb-8">Experience</h2>
-        
+        <h2 className="text-xs font-mono text-zinc-600 uppercase tracking-widest mb-8">
+          Experience
+        </h2>
+
         <div className="flex flex-col gap-16">
           {cvData.map((job, index) => (
             <div key={index}>
               <div className="flex justify-between items-start mb-2">
                 <div>
-                  <h3 className="text-xl font-bold text-white font-mono">{job.role}</h3>
+                  <h3 className="text-xl font-bold text-white font-mono">
+                    {job.role}
+                  </h3>
                   <p className="text-sm text-zinc-400">{job.company}</p>
                 </div>
-                <span className="text-xs font-mono text-zinc-500 mt-1">{job.date}</span>
+                <span className="text-xs font-mono text-zinc-500 mt-1">
+                  {job.date}
+                </span>
               </div>
-              
+
               <ul className="list-disc list-outside ml-4 mt-6 flex flex-col gap-3 text-sm text-zinc-300">
                 {job.bullets.map((bullet, i) => (
-                  <li key={i} className="leading-relaxed pl-2 marker:text-zinc-600">
+                  <li
+                    key={i}
+                    className="leading-relaxed pl-2 marker:text-zinc-600"
+                  >
                     {bullet}
                   </li>
                 ))}
@@ -76,7 +100,10 @@ export default function CvPage() {
               {job.tags && job.tags.length > 0 && (
                 <div className="flex flex-wrap gap-2 mt-6 text-xs font-mono text-zinc-400">
                   {job.tags.map((tag) => (
-                    <span key={tag} className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded">
+                    <span
+                      key={tag}
+                      className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded"
+                    >
                       {tag}
                     </span>
                   ))}

@@ -11,11 +11,16 @@ export default function McGillList() {
       exit={{ opacity: 0, transition: { duration: 0.2 } }}
     >
       <section>
-        <h1 className="text-4xl font-bold text-white mb-6 font-mono">About</h1>
+        <motion.h1
+          layoutId="main-page-title"
+          className="text-4xl font-bold text-white mb-16 font-mono inline-block origin-left"
+        >
+          Projects
+        </motion.h1>{" "}
         <p className="text-lg leading-relaxed text-zinc-400">
-          Lifelong learner with interests in coding, music, and reading. 
-          This page still leans on my coding output today, but I'll keep 
-          widening the lens over time.
+          Lifelong learner with interests in coding, music, and reading. This
+          page still leans on my coding output today, but I'll keep widening the
+          lens over time.
         </p>
       </section>
 
@@ -32,9 +37,12 @@ export default function McGillList() {
           >
             ECSE 211 - Design Principles and Methods
           </motion.h3>
-          <p className="text-sm text-zinc-400">
+          <motion.p
+            layoutId="mcgill-desc-ecse211"
+            className="text-sm text-zinc-400 origin-left"
+          >
             Autonomous robotics and hardware-software integration.
-          </p>
+          </motion.p>
         </TransitionLink>
 
         <TransitionLink
@@ -47,9 +55,12 @@ export default function McGillList() {
           >
             ECSE 223 - Model-Based Programming
           </motion.h3>
-          <p className="text-sm text-zinc-400">
+          <motion.p
+            layoutId="mcgill-desc-ecse223"
+            className="text-sm text-zinc-400 origin-left"
+          >
             Software engineering using state machines and UML.
-          </p>
+          </motion.p>
         </TransitionLink>
 
         <TransitionLink
@@ -62,9 +73,12 @@ export default function McGillList() {
           >
             ECSE 321 - Intro to Software Engineering
           </motion.h3>
-          <p className="text-sm text-zinc-400">
+          <motion.p
+            layoutId="mcgill-desc-ecse321"
+            className="text-sm text-zinc-400 origin-left"
+          >
             Full-stack web application development and CI/CD.
-          </p>
+          </motion.p>
         </TransitionLink>
       </div>
     </motion.div>

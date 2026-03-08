@@ -22,12 +22,10 @@ export default function RootLayout({
 
   return (
     <html lang="en" className="dark">
-      {/* Changed py-12 to pt-8 pb-12 to move the entire container up */}
       <body className={`${inter.className} ${spaceMono.variable} bg-[#111111] text-[#a1a1aa] antialiased min-h-screen flex flex-col items-center pt-8 pb-12 px-6`}>
-        <div className="w-full max-w-3xl">
+        <div className="w-full max-w-3xl flex flex-col min-h-screen">
           
-          {/* Top Navigation - Changed mb-24 to mb-16 to reduce the gap between nav and page content */}
-          <nav className="flex justify-between items-center text-sm font-medium text-zinc-500 mb-16">
+          <nav className="flex justify-between items-center text-sm font-medium text-zinc-500 mb-16 shrink-0">
             <div className="flex gap-6">
               <TransitionLink href="/" className={`transition-colors hover:text-white ${pathname === '/' ? 'text-zinc-100' : ''}`}>Home</TransitionLink>
               <TransitionLink href="/mcgill" className={`transition-colors hover:text-white ${pathname.includes('/mcgill') ? 'text-zinc-100' : ''}`}>McGill</TransitionLink>
@@ -37,10 +35,10 @@ export default function RootLayout({
             <TransitionLink href="/cv" className={`transition-colors hover:text-white ${pathname === '/cv' ? 'text-zinc-100' : ''}`}>CV</TransitionLink>
           </nav>
 
-          {/* Page Content */}
-          <main className="relative w-full">
+          {/* FIX: Removed absolute positioning so it doesn't break scrolling */}
+          <main className="w-full flex-grow">
             <AnimatePresence mode="wait">
-              <div key={pathname} className="w-full absolute left-0 top-0">
+              <div key={pathname} className="w-full h-full">
                 {children}
               </div>
             </AnimatePresence>
