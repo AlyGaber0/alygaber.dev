@@ -27,6 +27,19 @@ export default function Ecse321() {
         >
           {course.description}
         </motion.p>
+
+        <div className="flex flex-wrap gap-2 text-xs font-mono mt-4 text-zinc-500">
+          {["Python", "Lego EV3", "Technical Documentation"].map((tag) => (
+            <span
+              key={tag}
+              className="px-2 py-1 border border-zinc-800 rounded bg-zinc-900/30"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+
+        <hr className="border-zinc-800 mt-3" />
       </div>
 
       <motion.div
