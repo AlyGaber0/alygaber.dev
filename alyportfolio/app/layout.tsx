@@ -36,16 +36,16 @@ export default function RootLayout({
                 Home
               </TransitionLink>
               <TransitionLink
-                href="/mcgill"
-                className={`transition-colors hover:text-white ${pathname.includes("/mcgill") ? "text-zinc-100" : ""}`}
-              >
-                McGill
-              </TransitionLink>
-              <TransitionLink
                 href="/projects"
                 className={`transition-colors hover:text-white ${pathname.includes("/projects") ? "text-zinc-100" : ""}`}
               >
                 Projects
+              </TransitionLink>
+              <TransitionLink
+                href="/mcgill"
+                className={`transition-colors hover:text-white ${pathname.includes("/mcgill") ? "text-zinc-100" : ""}`}
+              >
+                McGill
               </TransitionLink>
               <TransitionLink
                 href="/about"
