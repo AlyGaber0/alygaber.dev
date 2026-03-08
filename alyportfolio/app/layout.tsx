@@ -35,7 +35,6 @@ export default function RootLayout({
             <TransitionLink href="/cv" className={`transition-colors hover:text-white ${pathname === '/cv' ? 'text-zinc-100' : ''}`}>CV</TransitionLink>
           </nav>
 
-          {/* FIX: Removed absolute positioning so it doesn't break scrolling */}
           <main className="w-full flex-grow">
             <AnimatePresence mode="wait">
               <div key={pathname} className="w-full h-full">

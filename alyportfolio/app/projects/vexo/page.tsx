@@ -1,26 +1,36 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { projectsData } from "@/lib/data";
 
 export default function VexoProject() {
+  const project = projectsData.find((p) => p.id === "vexo");
+  if (!project) return null;
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0, transition: { duration: 0.2 } }}
     >
-      {/* Header with Shared Layout ID */}
-      <motion.h1 
-        layoutId="project-title-vexo"
-        className="text-4xl font-bold text-white mb-4 font-mono origin-left inline-block"
-      >
-        Vexo
-      </motion.h1>
-      <p className="text-lg text-zinc-400 mb-4">Analytics and observability platform for mobile apps.</p>
+      <div className="flex flex-col mb-4">
+        <motion.h1 
+          layoutId={project.layoutIdTitle}
+          className="text-4xl font-bold text-white mb-4 font-mono origin-left"
+        >
+          {project.title}
+        </motion.h1>
+        
+        <motion.p 
+          layoutId={project.layoutIdDesc}
+          className="text-lg text-zinc-400 origin-left"
+        >
+          {project.description}
+        </motion.p>
+      </div>
       
-      {/* Tech Tags */}
       <div className="flex flex-wrap gap-2 mb-12">
-        {["Next.js", "React Native", "TypeScript", "Tailwind CSS"].map((tag) => (
+        {project.tags.map((tag) => (
           <span key={tag} className="px-2 py-1 text-xs font-mono text-zinc-400 border border-zinc-800 rounded bg-zinc-900/30">
             {tag}
           </span>
@@ -29,7 +39,6 @@ export default function VexoProject() {
 
       <hr className="border-zinc-800 mb-12" />
 
-      {/* Project Overview */}
       <motion.div 
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
