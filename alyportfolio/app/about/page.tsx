@@ -18,39 +18,44 @@ export default function AboutPage() {
           About
         </motion.h1>
         <p className="text-lg leading-relaxed text-zinc-400">
-          Lifelong learner with interests in coding, music, and reading. This
-          page still leans on my coding output today, but I'll keep widening the
-          lens over time.
+          SWE and Math student with interests in finance, coding, and sports and
+          fitness. I enjoy a difficult task, and impossible ones every once in a
+          while.
         </p>
         <hr className="border-zinc-800 mt-3" />
       </section>
 
       {/* Custom Subtitles Section */}
       <section>
-        <h2 className="text-xs font-mono text-zinc-600 uppercase tracking-widest mb-6">
-          Current Focus
-        </h2>
         <div className="flex flex-col gap-8">
           <div>
-            <h3 className="text-lg font-bold text-white mb-2 font-mono">
-              Building Scalable Systems
+            <h3 className="text-xl font-bold text-white mb-4 font-mono">
+              Sports & Fitness
             </h3>
-            <p className="text-sm leading-relaxed text-zinc-400">
-              Currently exploring distributed systems, advanced cloud
-              architectures, and how to effectively integrate AI tools into
-              traditional CI/CD pipelines without adding unnecessary complexity.
+            <p className="text-zinc-400 leading-relaxed">
+              I train year-round and set measurable goals that keep me
+              consistent and competitive across school semesters.
             </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-bold text-white mb-2 font-mono">
-              Personal Growth
+            <ul className="list-disc list-outside mt-1 ml-4 text-zinc-400 flex flex-col gap-4 mb-16">
+              <li className="leading-relaxed pl-2 marker:text-zinc-600">
+                Recent highlights: Beneva Half Marathon, University
+                Championships Men's B National Champion
+              </li>
+              <li className="leading-relaxed pl-2 marker:text-zinc-600">
+                Currently training for the Quebec Open, McGill Open, 2026 Beneva
+                Full Marathon
+              </li>
+            </ul>
+            <h3 className="text-xl font-bold text-white mb-4 font-mono">
+              Hobbies{" "}
             </h3>
-            <p className="text-sm leading-relaxed text-zinc-400">
-              When I'm not coding, I'm usually reading up on software design
-              patterns, trying out new web frameworks, or organizing my personal
-              knowledge base.
-            </p>
+            <ul className="list-disc list-outside mt-1 ml-4 text-zinc-400 flex flex-col gap-4 mb-16">
+              <li className="leading-relaxed pl-2 marker:text-zinc-600">
+                Current Read: Descartes Meditations on First Philosophy
+              </li>
+              {/* <li className="leading-relaxed pl-2 marker:text-zinc-600">
+              </li> */}
+            </ul>
           </div>
         </div>
       </section>

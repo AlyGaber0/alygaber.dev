@@ -1,11 +1,23 @@
 "use client";
 
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, Copy, Check, Mail } from "lucide-react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import TransitionLink from "@/components/TransitionLink";
 import { projectsData, mcgillData } from "@/lib/data";
 
 export default function Home() {
+  const [copied, setCopied] = useState(false);
+  const email = "aly.gaber@mail.mcgill.ca";
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText(email);
+    setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 2000);
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -25,19 +37,32 @@ export default function Home() {
           I build responsive, user-facing products with a focus on clean UI,
           usability, and maintainable frontend systems.{" "}
         </p>
-        <div className="flex gap-6 text-sm text-zinc-400">
-          <a
-            href="https://github.com/AlyGaber0"
-            className="flex items-center gap-2 hover:text-white transition-colors"
+        
+        <div className="flex flex-col gap-4">
+          <div className="flex gap-6 text-sm text-zinc-400">
+            <a
+              href="https://github.com/AlyGaber0"
+              className="flex items-center gap-2 hover:text-white transition-colors"
+            >
+              <Github size={18} /> GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/aly-gaber/"
+              className="flex items-center gap-2 hover:text-white transition-colors"
+            >
+              <Linkedin size={18} /> LinkedIn
+            </a>
+          </div>
+          
+          <button
+            onClick={handleCopyEmail}
+            className="flex items-center gap-2 text-sm text-zinc-400 hover:text-white transition-colors w-fit group"
           >
-            <Github size={18} /> GitHub
-          </a>
-          <a
-            href="https://www.linkedin.com/in/aly-gaber/"
-            className="flex items-center gap-2 hover:text-white transition-colors"
-          >
-            <Linkedin size={18} /> LinkedIn
-          </a>
+            <Mail size={18} /> {email}
+            <span className="text-zinc-500 group-hover:text-zinc-300 transition-colors">
+              {copied ? <Check size={14} className="text-green-500" /> : <Copy size={14} />}
+            </span>
+          </button>
         </div>
       </section>
 
