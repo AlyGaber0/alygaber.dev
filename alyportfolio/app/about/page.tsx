@@ -39,7 +39,7 @@ export default function AboutPage() {
             <ul className="list-disc list-outside mt-1 ml-4 text-zinc-400 flex flex-col gap-4 mb-16">
               <li className="leading-relaxed pl-2 marker:text-zinc-600">
                 Recent highlights: Beneva Half Marathon, University
-                Championships Men's B National Champion
+                Squash Championships Men's B National Champion
               </li>
               <li className="leading-relaxed pl-2 marker:text-zinc-600">
                 Currently training for the Quebec Open, McGill Open, 2026 Beneva

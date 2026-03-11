@@ -62,7 +62,7 @@ const extracurricularData = [
 ];
 
 const renderList = (data: any[]) => (
-  <div className="flex flex-col gap-16">
+  <div className="flex flex-col gap-12">
     {data.map((item, index) => (
       <div key={index}>
         <div className="flex justify-between items-start mb-2">
@@ -86,7 +86,7 @@ const renderList = (data: any[]) => (
         </ul>
 
         {item.tags && item.tags.length > 0 && (
-          <div className="flex flex-wrap gap-2 mt-6 text-xs font-mono text-zinc-400">
+          <div className="flex flex-wrap gap-2 mt-2 text-xs font-mono text-zinc-400">
             {item.tags.map((tag: string) => (
               <span
                 key={tag}
@@ -124,7 +124,7 @@ export default function CvPage() {
 
       {/* Experience Section */}
       <section>
-        <h2 className="text-xs font-mono text-zinc-600 uppercase tracking-widest mb-8">
+        <h2 className="text-xs font-mono text-zinc-600 uppercase tracking-widest mb-5">
           Experience
         </h2>
         {renderList(experienceData)}
@@ -132,7 +132,7 @@ export default function CvPage() {
 
       {/* Extracurriculars Section */}
       <section>
-        <h2 className="text-xs font-mono text-zinc-600 uppercase tracking-widest mb-8">
+        <h2 className="text-xs font-mono text-zinc-600 uppercase tracking-widest mb-5">
           Extracurriculars
         </h2>
         {renderList(extracurricularData)}
@@ -140,7 +140,7 @@ export default function CvPage() {
 
       {/* Education Section */}
       <section>
-        <h2 className="text-xs font-mono text-zinc-600 uppercase tracking-widest mb-8">
+        <h2 className="text-xs font-mono text-zinc-600 uppercase tracking-widest mb-5">
           Education
         </h2>
         {renderList(educationData)}
