@@ -130,8 +130,7 @@ export default function Ecse211() {
             />
           </div>
           <p className="text-sm text-zinc-500 italic mt-4 text-center max-w-xl">
-            Final hardware architecture of our EV3 autonomous robot. Source:
-            ECSE 211 Team.
+            Final hardware architecture of our EV3 autonomous robot.
           </p>
         </div>
       </motion.div>

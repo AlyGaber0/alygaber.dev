@@ -48,14 +48,22 @@ export default function VexoProject() {
         transition={{ delay: 0.1, duration: 0.4 }}
         className="prose prose-invert prose-zinc max-w-none"
       >
+        <div className="w-1/3 mb-10 overflow-hidden ">
+          <img
+            src="/vexo-full.svg"
+            alt="Vexo Labs Logo"
+            className="w-full h-auto object-cover"
+          />
+        </div>
+
         <h3 className="text-xl font-bold text-white mb-4 font-mono">
           Overview
         </h3>
+        <p className="text-zinc-400 leading-relaxed mb-4">
+          Vexo Labs is building the future of finance for the next generation. Our platform blends intelligent money management with culture, making investing and financial literacy accessible, engaging, and social. Through gamified insights, AI-driven budgeting, and real-time integration with stocks, crypto, and banking, we empower students and young professionals to take control of their financial journey.
+        </p>
         <p className="text-zinc-400 leading-relaxed mb-10">
-          Vexo is a modern analytics platform designed specifically to help
-          developers monitor and understand user behavior inside mobile
-          applications. It provides real-time insights, custom event tracking,
-          and performance metrics in a clean, user-friendly dashboard.
+          With a focus on speed, design, and community, Vexo is more than a fintech app; it's where finance meets culture.
         </p>
 
         <h3 className="text-xl font-bold text-white mb-4 font-mono">
@@ -63,17 +71,13 @@ export default function VexoProject() {
         </h3>
         <ul className="list-disc list-outside ml-4 text-zinc-400 flex flex-col gap-4">
           <li className="leading-relaxed pl-2 marker:text-zinc-600">
-            Designed and implemented the core analytics dashboard using Next.js
-            and Tailwind CSS, focusing on data visualization and an intuitive
-            user experience.
+            Design and implement responsive frontend user interfaces from core design specifications using Next.js and Tailwind CSS.
           </li>
           <li className="leading-relaxed pl-2 marker:text-zinc-600">
-            Integrated complex charting libraries to display real-time user
-            retention and drop-off rates accurately.
+            Build complex, fluid page transitions and interactive animations using Framer Motion to ensure the app feels modern, engaging, and fast.
           </li>
           <li className="leading-relaxed pl-2 marker:text-zinc-600">
-            Optimized frontend performance, ensuring the dashboard loaded
-            instantly even when processing thousands of data points.
+            Bridge the gap between frontend features and backend infrastructure, actively connecting the UI to databases and assisting with the deployment pipeline.
           </li>
         </ul>
       </motion.div>

@@ -19,7 +19,7 @@ const experienceData = [
   {
     role: "Software Engineer",
     company: "Vexo Labs Inc.",
-    date: "Feb 2026 - Present",
+    date: "Jan 2026 - Present",
     bullets: [
       "Develop responsive, user-facing features in Next.js by implementing designer-provided UI mockups into production-ready frontend code with a focus on customer experience and usability.",
       "Collaborating with team members through code reviews and iterative design sessions to build reusable, extensible components that improve software quality, maintainability, and performance across the full software development lifecycle.",
