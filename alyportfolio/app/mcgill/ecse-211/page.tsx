@@ -57,7 +57,7 @@ export default function Ecse211() {
           a grid and "deliver mail" to specific office checkpoints. This came
           with many challenges, the main one being to master the engineering
           design process. My team and I treated this project like a professional
-          software lifecycle. WE wrote strict requirements documents, mapped out
+          software lifecycle. We wrote strict requirements documents, mapped out
           dependencies with Gantt charts, and used detailed meeting minutes to
           track and justify progress and technical decisions.
         </p>
