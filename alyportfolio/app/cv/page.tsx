@@ -62,7 +62,7 @@ const extracurricularData = [
 ];
 
 const renderList = (data: any[]) => (
-  <div className="flex flex-col gap-12">
+  <div className="flex flex-col gap-8">
     {data.map((item, index) => (
       <div key={index}>
         <div className="flex justify-between items-start mb-2">
@@ -108,7 +108,8 @@ export default function CvPage() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0, transition: { duration: 0.2 } }}
-      className="flex flex-col gap-16 pb-24"
+      // Changed the parent container to gap-8 so the header isn't miles away from the content
+      className="flex flex-col gap-8 pb-24"
     >
       <section>
         <div className="flex flex-col">
@@ -122,29 +123,32 @@ export default function CvPage() {
         <hr className="border-zinc-800 mt-3" />
       </section>
 
-      {/* Experience Section */}
-      <section>
-        <h2 className="text-xs font-mono text-zinc-600 uppercase tracking-widest mb-5">
-          Experience
-        </h2>
-        {renderList(experienceData)}
-      </section>
+      {/* Wrapped the remaining sections in their own div with gap-20 to keep them spaced out */}
+      <div className="flex flex-col gap-20">
+        {/* Experience Section */}
+        <section>
+          <h2 className="text-xs font-mono text-zinc-600 uppercase tracking-widest mb-5">
+            Experience
+          </h2>
+          {renderList(experienceData)}
+        </section>
 
-      {/* Extracurriculars Section */}
-      <section>
-        <h2 className="text-xs font-mono text-zinc-600 uppercase tracking-widest mb-5">
-          Extracurriculars
-        </h2>
-        {renderList(extracurricularData)}
-      </section>
+        {/* Extracurriculars Section */}
+        <section>
+          <h2 className="text-xs font-mono text-zinc-600 uppercase tracking-widest mb-5">
+            Extracurriculars
+          </h2>
+          {renderList(extracurricularData)}
+        </section>
 
-      {/* Education Section */}
-      <section>
-        <h2 className="text-xs font-mono text-zinc-600 uppercase tracking-widest mb-5">
-          Education
-        </h2>
-        {renderList(educationData)}
-      </section>
+        {/* Education Section */}
+        <section>
+          <h2 className="text-xs font-mono text-zinc-600 uppercase tracking-widest mb-5">
+            Education
+          </h2>
+          {renderList(educationData)}
+        </section>
+      </div>
     </motion.div>
   );
 }
