@@ -98,7 +98,7 @@ export default function NormanProject() {
           </li>
         </ul>
 
-        <div className="flex flex-col items-center mb-16">
+        <div className="flex flex-col items-center mb-16 mt-12">
           <div className="w-full max-w-2xl h-[700px] rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900 shadow-lg relative">
             <object
               data="/norman-summary.pdf"
