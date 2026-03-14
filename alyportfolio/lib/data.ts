@@ -8,7 +8,25 @@ export const projectsData = [
     href: "/projects/vexo",
     layoutIdTitle: "project-title-vexo",
     layoutIdDesc: "project-desc-vexo",
-  }
+  },
+  {
+    id: "norman",
+    title: "Norman Private Capital",
+    description:
+      "Full-stack financial research platform with Python math microservices and typed PostgreSQL.",
+    tags: [
+      "Next.js",
+      "FastAPI",
+      "PostgreSQL",
+      "Prisma",
+      "Stripe",
+      "Clerk",
+      "Resend",
+    ],
+    href: "/projects/norman",
+    layoutIdTitle: "project-title-norman",
+    layoutIdDesc: "project-desc-norman",
+  },
 ];
 
 export const mcgillData = [

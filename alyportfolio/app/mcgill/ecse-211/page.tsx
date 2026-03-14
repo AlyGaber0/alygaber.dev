@@ -92,20 +92,14 @@ export default function Ecse211() {
           Project Gallery & Documentation
         </h3>
 
-        {/* Embedded Google Doc Report Section */}
         <div className="flex flex-col items-center mb-16">
-          {/* We make the container exactly max-w-2xl and height fixed relative to its scaled contents */}
           <div className="w-full max-w-2xl h-[600px] rounded-xl overflow-hidden border border-zinc-800 bg-white shadow-lg relative">
             <iframe
               src="https://docs.google.com/document/d/e/2PACX-1vTOfuItZb9uFZx_P6Cfum8ypxBR11ZuC5d53kM9yMsHnVmRYn8s4o1j160juz6QpoAh-ywTGQDX1Fmt/pub?embedded=true"
               className="absolute top-0 left-0 border-none"
               title="ECSE 211 Final Report"
               allowFullScreen
-              /* 
-                THE TRICK: 
-                We make the iframe 125% width and 125% height of the container, 
-                then scale it down by 0.8 to fit perfectly inside without horizontal scrolling.
-              */
+
               style={{
                 width: "125%",
                 height: "125%",
@@ -120,7 +114,6 @@ export default function Ecse211() {
           </p>
         </div>
 
-        {/* Embedded Image Section */}
         <div className="flex flex-col items-center mb-10">
           <div className="w-full max-w-2xl rounded-xl overflow-hidden bg-white/5 border border-zinc-800 p-1">
             <img
