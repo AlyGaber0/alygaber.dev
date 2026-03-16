@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { projectsData } from "@/lib/data";
+import { ExternalLink } from "lucide-react";
 
 export default function NormanProject() {
   const project = projectsData.find((p) => p.id === "norman");
@@ -48,6 +49,18 @@ export default function NormanProject() {
         transition={{ delay: 0.1, duration: 0.4 }}
         className="prose prose-invert prose-zinc max-w-none"
       >
+        <div className="flex flex-col items-start gap-4 mb-10">
+          <a
+            href="https://normanprivatecapital.ca"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group mt-2 inline-flex items-center gap-2 bg-zinc-100 text-zinc-900 px-6 py-3 rounded-lg font-medium transition-all hover:scale-[1.02] hover:bg-white text-sm no-underline"
+          >
+            Visit normanprivatecapital.ca
+            <ExternalLink className="w-4 h-4 text-zinc-600 group-hover:text-zinc-900 transition-colors" />
+          </a>
+        </div>
+
         <h3 className="text-xl font-bold text-white mb-4 font-mono">
           Overview
         </h3>
