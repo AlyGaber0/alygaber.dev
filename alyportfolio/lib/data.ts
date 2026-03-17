@@ -13,7 +13,7 @@ export const projectsData = [
     id: "norman",
     title: "Norman Private Capital",
     description:
-      "Full-stack financial research platform with Python math microservices and typed PostgreSQL.",
+      "Full-stack financial research platform with Professional-grade UI and typed PostgreSQL.",
     tags: [
       "Next.js",
       "Supabase",

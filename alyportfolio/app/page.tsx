@@ -37,7 +37,7 @@ export default function Home() {
           I build responsive, user-facing products with a focus on clean UI,
           usability, and maintainable frontend systems.{" "}
         </p>
-        
+
         <div className="flex flex-col gap-4">
           <div className="flex gap-6 text-sm text-zinc-400">
             <a
@@ -53,14 +53,18 @@ export default function Home() {
               <Linkedin size={18} /> LinkedIn
             </a>
           </div>
-          
+
           <button
             onClick={handleCopyEmail}
             className="flex items-center gap-2 text-sm text-zinc-400 hover:text-white transition-colors w-fit group"
           >
             <Mail size={18} /> {email}
             <span className="text-zinc-500 group-hover:text-zinc-300 transition-colors">
-              {copied ? <Check size={14} className="text-green-500" /> : <Copy size={14} />}
+              {copied ? (
+                <Check size={14} className="text-green-500" />
+              ) : (
+                <Copy size={14} />
+              )}
             </span>
           </button>
         </div>
