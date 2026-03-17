@@ -64,50 +64,130 @@ export default function NormanProject() {
         <h3 className="text-xl font-bold text-white mb-4 font-mono">
           Overview
         </h3>
-        <p className="text-zinc-400 leading-relaxed mb-4">
-          Norman Private Capital is a financial research and data platform built
-          to make institutional-style market analysis accessible to retail
-          investors, students, and early-career professionals. The platform
-          packages deep fundamental analysis, thematic portfolios, and
-          software-driven delivery so users can understand markets, evaluate
-          companies, and react to macro events with structure instead of noise.
-        </p>
         <p className="text-zinc-400 leading-relaxed mb-10">
-          Under the hood, the product is a full-stack system: a modern
-          Next.js-based web experience on top of a typed PostgreSQL schema and a
-          Python FastAPI microservice that ingests market data, runs valuation
-          models, and maintains a live portfolio tracker. This turns financial
-          research into a repeatable digital product rather than static PDFs,
-          enabling versioned model packages, thematic portfolios, and a public
-          track record to prove the quality of the process.
+          Norman Private Capital is a full-stack fintech SaaS platform that
+          delivers institutional-grade investment research to retail investors.
+          The platform offers two core products: curated thematic investment
+          portfolios with exact stock weightings and rationale, and
+          industry-specific financial valuation models (DCF and comparable
+          analysis) available for download. Users can browse a live portfolio
+          tracker showing simulated performance against the S&P 500, purchase
+          individual packages or bundles through an integrated Stripe checkout
+          supporting Apple Pay and Google Pay, and access gated content after
+          payment. The platform is backed by a PostgreSQL database managed
+          through a custom admin dashboard, where content, pricing, holdings,
+          and performance stats can all be edited and published in real time —
+          with automated email notifications sent to users whenever new products
+          launch or existing ones are updated.
         </p>
 
         <h3 className="text-xl font-bold text-white mb-4 font-mono">
-          Technical Stack & My Role
+          My Role & Technical Stack
         </h3>
-        <ul className="list-disc list-outside ml-4 text-zinc-400 flex flex-col gap-4">
+
+        <h4 className="text-lg font-semibold text-white mb-3 font-mono">
+          External APIs & Services
+        </h4>
+        <ul className="list-disc list-outside ml-4 text-zinc-400 flex flex-col gap-2 mb-6">
           <li className="leading-relaxed pl-2 marker:text-zinc-600">
-            <span className="font-semibold">Frontend architecture:</span>{" "}
-            Designed and implemented the client experience using Next.js (App
-            Router), Tailwind CSS, and interactive charting libraries to build
-            the model viewer and portfolio watcher with fast, SEO-friendly
-            pages.
+            <span className="font-semibold">Stripe:</span> Implemented full
+            payment infrastructure: Checkout sessions, embedded card +
+            Apple/Google Pay via Elements, Payment Intents, and webhooks. New
+            products and CAD prices are created dynamically through the Stripe
+            API so we never touch the Stripe dashboard in normal operation.
           </li>
           <li className="leading-relaxed pl-2 marker:text-zinc-600">
-            <span className="font-semibold">Backend & data engine:</span> Helped
-            design a decoupled Python FastAPI microservice that uses NumPy and
-            Pandas for valuation math, exposing clean REST endpoints that the
-            Next.js app can call for DCF outputs and portfolio metrics.
+            <span className="font-semibold">Clerk:</span> Wired up
+            authentication and identity, including email/password with OTP,
+            Google/Apple OAuth, session handling through middleware, and
+            server-side user lookups via the Clerk Node SDK for precise
+            notification targeting.
           </li>
           <li className="leading-relaxed pl-2 marker:text-zinc-600">
-            <span className="font-semibold">
-              Infrastructure & integrations:
-            </span>{" "}
-            Worked on the PostgreSQL + Prisma data model, and integrated Stripe,
-            Clerk Auth, Resend, and market-data APIs to handle payments, access
-            control, transactional email, and automated portfolio
-            updates—deploying the stack across Vercel (frontend) and a Python
-            host for the FastAPI service.
+            <span className="font-semibold">Supabase (PostgreSQL):</span>{" "}
+            Designed a relational schema and integrated it via the Supabase JS
+            client using a service-role key for admin operations. Handled
+            foreign keys and manual cascade deletion logic for portfolios,
+            holdings, and purchases.
+          </li>
+          <li className="leading-relaxed pl-2 marker:text-zinc-600">
+            <span className="font-semibold">Resend:</span> Built transactional
+            email flows with branded HTML templates. New product launches email
+            all registered users; updates only email customers who purchased
+            that specific product, resolved from the purchases table.
+          </li>
+        </ul>
+
+        <h4 className="text-lg font-semibold text-white mb-3 font-mono">
+          Frontend
+        </h4>
+        <ul className="list-disc list-outside ml-4 text-zinc-400 flex flex-col gap-2 mb-6">
+          <li className="leading-relaxed pl-2 marker:text-zinc-600">
+            Built the entire interface in Next.js App Router (React + TypeScript
+            + Tailwind), with client components, loading states, and skeletons
+            for all data fetches.
+          </li>
+          <li className="leading-relaxed pl-2 marker:text-zinc-600">
+            Built a password-protected admin dashboard with tabs for Portfolios,
+            Models, and Tracker, including inline editing, holdings management
+            with live chart preview, and "Save & Notify" flows.
+          </li>
+          <li className="leading-relaxed pl-2 marker:text-zinc-600">
+            Used Framer Motion for page transitions, scroll-triggered
+            animations, and a smooth multi-step auth/admin flow.
+          </li>{" "}
+        </ul>
+
+        <h4 className="text-lg font-semibold text-white mb-3 font-mono">
+          Backend
+        </h4>
+        <ul className="list-disc list-outside ml-4 text-zinc-400 flex flex-col gap-2 mb-6">
+          <li className="leading-relaxed pl-2 marker:text-zinc-600">
+            Implemented 20+ REST API routes under app/api/, grouped by resource
+            (portfolios, models, tracker, admin, Stripe).
+          </li>
+          <li className="leading-relaxed pl-2 marker:text-zinc-600">
+            Portfolio routes support full CRUD plus atomic holdings updates and
+            manual cascade deletion of dependent rows.
+          </li>
+          <li className="leading-relaxed pl-2 marker:text-zinc-600">
+            Admin routes handle Stripe checkout session creation, webhook
+            processing (with signature verification), Stripe product/price
+            creation, and batched email notifications via Resend.
+          </li>
+        </ul>
+
+        <h4 className="text-lg font-semibold text-white mb-3 font-mono">
+          Engineering Practices
+        </h4>
+        <ul className="list-disc list-outside ml-4 text-zinc-400 flex flex-col gap-2 mb-8">
+          <li className="leading-relaxed pl-2 marker:text-zinc-600">
+            Enforced separation of concerns: public read endpoints are open; all
+            write operations require an x-admin-password header checked
+            server-side.
+          </li>
+          <li className="leading-relaxed pl-2 marker:text-zinc-600">
+            Disabled stale caching on data routes with export const dynamic =
+            'force-dynamic' so admin changes show up immediately.
+          </li>
+          <li className="leading-relaxed pl-2 marker:text-zinc-600">
+            Protected relational integrity by deleting dependent rows in the
+            correct order (purchases → holdings → parent).
+          </li>
+          <li className="leading-relaxed pl-2 marker:text-zinc-600">
+            Standardized error handling: all APIs return structured JSON with
+            proper HTTP status codes; the frontend reads these and surfaces
+            clear inline messages.
+          </li>
+          <li className="leading-relaxed pl-2 marker:text-zinc-600">
+            Hardened payments via Stripe webhook signature verification before
+            processing any event.
+          </li>
+          <li className="leading-relaxed pl-2 marker:text-zinc-600">
+            After destructive operations, follow-up SELECT checks confirm the
+            database state; the admin UI only updates local state when res.ok is
+            true, and email failures from Resend are shown separately from save
+            failures.
           </li>
         </ul>
 
