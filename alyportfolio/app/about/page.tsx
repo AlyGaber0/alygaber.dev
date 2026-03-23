@@ -51,7 +51,7 @@ export default function AboutPage() {
             </h3>
             <ul className="list-disc list-outside mt-1 ml-4 text-zinc-400 flex flex-col gap-4 mb-16">
               <li className="leading-relaxed pl-2 marker:text-zinc-600">
-                Current Read: Descartes Meditations on First Philosophy
+                Current Read: Descartes Meditations on First Philosophy, The Brothers Karamazov
               </li>
               {/* <li className="leading-relaxed pl-2 marker:text-zinc-600">
               </li> */}
