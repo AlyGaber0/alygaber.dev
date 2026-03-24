@@ -34,8 +34,7 @@ export default function Home() {
         </motion.h1>
 
         <p className="text-lg leading-relaxed text-zinc-400 mb-6 max-w-2xl">
-          I build responsive, user-facing products with a focus on clean UI,
-          usability, and maintainable frontend systems.{" "}
+          I  build real products. Fintech platforms, analytics dashboards, full-stack systems - shipped, deployed, live.{" "}
         </p>
 
         <div className="flex flex-col gap-4">
