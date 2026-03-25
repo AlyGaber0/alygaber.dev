@@ -67,18 +67,7 @@ export default function NormanProject() {
         <p className="text-zinc-400 leading-relaxed mb-10">
           Norman Private Capital is a full-stack fintech SaaS platform that
           delivers institutional-grade investment research to retail investors.
-          The platform offers two core products: curated thematic investment
-          portfolios with exact stock weightings and rationale, and
-          industry-specific financial valuation models (DCF and comparable
-          analysis) available for download. Users can browse a live portfolio
-          tracker showing simulated performance against the S&P 500, purchase
-          individual packages or bundles through an integrated Stripe checkout
-          supporting Apple Pay and Google Pay, and access gated content after
-          payment. The platform is backed by a PostgreSQL database managed
-          through a custom admin dashboard, where content, pricing, holdings,
-          and performance stats can all be edited and published in real time —
-          with automated email notifications sent to users whenever new products
-          launch or existing ones are updated.
+          We offer two main products: Curated portfolios for beginner investors who don't know where they should distribute their capital, and industry-grade financial models for those who want to save their most valuable asset: time.
         </p>
 
         <h3 className="text-xl font-bold text-white mb-4 font-mono">
