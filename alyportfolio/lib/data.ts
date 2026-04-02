@@ -1,6 +1,16 @@
 
 export const projectsData = [
   {
+    id: "habit-tracker",
+    title: "Daily Habit Tracker",
+    description:
+      "Personalized mobile-first habit tracker with analytics, correlations, and history — built for myself.",
+    tags: ["Next.js", "TypeScript", "Supabase", "PWA"],
+    href: "/projects/habit-tracker",
+    layoutIdTitle: "project-title-habit-tracker",
+    layoutIdDesc: "project-desc-habit-tracker",
+  },
+  {
     id: "vexo",
     title: "Vexo",
     description: "Analytics and observability platform for mobile apps.",
