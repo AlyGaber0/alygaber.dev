@@ -59,11 +59,14 @@ export default function VexoProject() {
         <h3 className="text-xl font-bold text-white mb-4 font-mono">
           Overview
         </h3>
-        <p className="text-zinc-400 leading-relaxed mb-4">
-          Vexo Labs is building the future of finance for the next generation. Our platform blends intelligent money management with culture, making investing and financial literacy accessible, engaging, and social. Through gamified insights, AI-driven budgeting, and real-time integration with stocks, crypto, and banking, we empower students and young professionals to take control of their financial journey.
-        </p>
         <p className="text-zinc-400 leading-relaxed mb-10">
-          With a focus on speed, design, and community, Vexo is more than a fintech app; it's where finance meets culture.
+          Vexo is a fintech app built for students and young professionals who
+          want to actually understand their money. The idea is to make investing
+          and financial literacy feel less intimidating by combining money
+          management with the social and cultural side of finance. It pulls in
+          real-time data across stocks, crypto, and banking, and uses gamified
+          features to keep people engaged with it. I joined the team as a
+          frontend engineer.
         </p>
 
         <h3 className="text-xl font-bold text-white mb-4 font-mono">

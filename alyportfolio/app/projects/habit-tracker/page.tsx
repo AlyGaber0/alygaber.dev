@@ -116,8 +116,8 @@ export default function HabitTrackerProject() {
         </h4>
         <ul className="list-disc list-outside ml-4 text-zinc-400 flex flex-col gap-2 mb-8">
           <li className="leading-relaxed pl-2 marker:text-zinc-600">
-            Supabase for both the PostgreSQL database and authentication —
-            login is required so no one else can read or write my data.
+            Supabase for the PostgreSQL database and authentication. Login is
+            required so no one else can read or write my data.
           </li>
           <li className="leading-relaxed pl-2 marker:text-zinc-600">
             Configured as a Progressive Web App with a custom app icon, so it

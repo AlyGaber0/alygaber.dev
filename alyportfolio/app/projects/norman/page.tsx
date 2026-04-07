@@ -65,9 +65,11 @@ export default function NormanProject() {
           Overview
         </h3>
         <p className="text-zinc-400 leading-relaxed mb-10">
-          Norman Private Capital is a full-stack fintech SaaS platform that
-          delivers institutional-grade investment research to retail investors.
-          We offer two main products: Curated portfolios for beginner investors who don't know where they should distribute their capital, and industry-grade financial models for those who want to save their most valuable asset: time.
+          Norman Private Capital is a financial research platform I built for a
+          client. It has two products: curated stock portfolios for people who
+          are just getting started and have no idea where to put their money,
+          and detailed financial models for people who want proper analysis
+          without spending hours doing it themselves.
         </p>
 
         <h3 className="text-xl font-bold text-white mb-4 font-mono">

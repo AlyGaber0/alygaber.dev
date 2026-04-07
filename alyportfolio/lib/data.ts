@@ -4,7 +4,7 @@ export const projectsData = [
     id: "habit-tracker",
     title: "Daily Habit Tracker",
     description:
-      "Personalized mobile-first habit tracker with analytics, correlations, and history — built for myself.",
+      "A habit tracker I built for myself, with analytics, correlations, and a full log of every day.",
     tags: ["Next.js", "TypeScript", "Supabase", "PWA"],
     href: "/projects/habit-tracker",
     layoutIdTitle: "project-title-habit-tracker",
