@@ -124,7 +124,7 @@ export default function HabitTrackerProject() {
             installs directly to my iPhone home screen and launches full-screen.
           </li>
           <li className="leading-relaxed pl-2 marker:text-zinc-600">
-            Not publicly open — built and deployed exclusively for personal use.
+            Not publicly open. Built and deployed exclusively for personal use.
           </li>
         </ul>
 
@@ -137,7 +137,7 @@ export default function HabitTrackerProject() {
             <div className="w-full rounded-2xl overflow-hidden border border-zinc-800 shadow-lg">
               <img
                 src="/habit-log.png"
-                alt="Habit Tracker — Daily Log"
+                alt="Habit Tracker - Daily Log"
                 className="w-full h-auto object-cover"
               />
             </div>
@@ -150,7 +150,7 @@ export default function HabitTrackerProject() {
             <div className="w-full rounded-2xl overflow-hidden border border-zinc-800 shadow-lg">
               <img
                 src="/habit-analytics.png"
-                alt="Habit Tracker — Analytics"
+                alt="Habit Tracker - Analytics"
                 className="w-full h-auto object-cover"
               />
             </div>
@@ -163,7 +163,7 @@ export default function HabitTrackerProject() {
             <div className="w-full rounded-2xl overflow-hidden border border-zinc-800 shadow-lg">
               <img
                 src="/habit-history.png"
-                alt="Habit Tracker — History"
+                alt="Habit Tracker - History"
                 className="w-full h-auto object-cover"
               />
             </div>
