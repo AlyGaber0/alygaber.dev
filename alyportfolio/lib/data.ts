@@ -1,16 +1,6 @@
 
 export const projectsData = [
   {
-    id: "habit-tracker",
-    title: "Daily Habit Tracker",
-    description:
-      "A habit tracker I built for myself, with analytics, correlations, and a full log of every day.",
-    tags: ["Next.js", "TypeScript", "Supabase", "PWA"],
-    href: "/projects/habit-tracker",
-    layoutIdTitle: "project-title-habit-tracker",
-    layoutIdDesc: "project-desc-habit-tracker",
-  },
-  {
     id: "vexo",
     title: "Vexo",
     description: "Analytics and observability platform for mobile apps.",
@@ -34,6 +24,16 @@ export const projectsData = [
     href: "/projects/norman",
     layoutIdTitle: "project-title-norman",
     layoutIdDesc: "project-desc-norman",
+  },
+  {
+    id: "habit-tracker",
+    title: "Daily Habit Tracker",
+    description:
+      "A habit tracker I built for myself, with analytics, correlations, and a full log of every day.",
+    tags: ["Next.js", "TypeScript", "Supabase", "PWA"],
+    href: "/projects/habit-tracker",
+    layoutIdTitle: "project-title-habit-tracker",
+    layoutIdDesc: "project-desc-habit-tracker",
   },
 ];
 
