@@ -9,24 +9,20 @@ export default function VexoProject() {
 
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0, transition: { duration: 0.2 } }}
+      exit={{ opacity: 0, transition: { duration: 0.15 } }}
     >
       <div className="flex flex-col mb-4">
         <motion.h1
           layoutId={project.layoutIdTitle}
-          className="text-4xl font-bold text-white mb-4 font-mono origin-left"
+          transition={{ type: "tween", duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
+          className="text-4xl font-bold text-white mb-4 font-mono"
         >
           {project.title}
         </motion.h1>
 
-        <motion.p
-          layoutId={project.layoutIdDesc}
-          className="text-lg text-zinc-400 origin-left"
-        >
+        <p className="text-lg text-zinc-400">
           {project.description}
-        </motion.p>
+        </p>
 
         <div className="flex flex-wrap gap-2 text-xs font-mono mt-4 text-zinc-500">
           {project.tags.map((tag) => (
@@ -43,9 +39,9 @@ export default function VexoProject() {
       </div>
 
       <motion.div
-        initial={{ opacity: 0, y: 10 }}
+        initial={{ opacity: 0, y: 5 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.1, duration: 0.4 }}
+        transition={{ delay: 0.08, duration: 0.45, ease: [0.25, 0.46, 0.45, 0.94] }}
         className="prose prose-invert prose-zinc max-w-none"
       >
         <div className="w-1/3 mb-10 overflow-hidden ">

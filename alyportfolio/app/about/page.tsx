@@ -5,18 +5,13 @@ import { motion } from "framer-motion";
 export default function AboutPage() {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0, transition: { duration: 0.2 } }}
+      exit={{ opacity: 0, transition: { duration: 0.15 } }}
       className="flex flex-col gap-16"
     >
       <section>
-        <motion.h1
-          layoutId="main-page-title"
-          className="text-4xl font-bold text-white mb-6 font-mono inline-block origin-left"
-        >
+        <h1 className="text-4xl font-bold text-white mb-6 font-mono">
           About
-        </motion.h1>
+        </h1>
         <p className="text-lg leading-relaxed text-zinc-400">
           SWE and Math student with interests in finance, coding, and sports and
           fitness. I enjoy a difficult task, and impossible ones every once in a

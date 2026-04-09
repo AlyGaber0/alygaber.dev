@@ -20,18 +20,13 @@ export default function Home() {
 
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0, transition: { duration: 0.2 } }}
+      exit={{ opacity: 0, transition: { duration: 0.15 } }}
       className="flex flex-col gap-16"
     >
       <section>
-        <motion.h1
-          layoutId="main-page-title"
-          className="text-5xl font-bold text-white mb-6 tracking-tight font-mono inline-block origin-left"
-        >
+        <h1 className="text-5xl font-bold text-white mb-6 tracking-tight font-mono">
           Aly Gaber
-        </motion.h1>
+        </h1>
 
         <p className="text-lg leading-relaxed text-zinc-400 mb-6 max-w-2xl">
           I  build real products. Fintech platforms, analytics dashboards, full-stack systems - shipped, deployed, live.{" "}
@@ -83,16 +78,14 @@ export default function Home() {
             >
               <motion.h3
                 layoutId={project.layoutIdTitle}
-                className="text-lg font-bold text-white mb-2 font-mono group-hover:text-zinc-300 transition-colors inline-block origin-left"
+                transition={{ type: "tween", duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
+                className="text-lg font-bold text-white mb-2 font-mono group-hover:text-zinc-300 transition-colors"
               >
                 {project.title}
               </motion.h3>
-              <motion.p
-                layoutId={project.layoutIdDesc}
-                className="text-sm text-zinc-400 mb-4"
-              >
+              <p className="text-sm text-zinc-400 mb-4">
                 {project.description}
-              </motion.p>
+              </p>
               <div className="flex flex-wrap gap-2 text-xs font-mono text-zinc-500">
                 {project.tags.map((tag) => (
                   <span
@@ -122,16 +115,14 @@ export default function Home() {
             >
               <motion.h3
                 layoutId={course.layoutIdTitle}
-                className="text-lg font-bold text-white mb-2 font-mono group-hover:text-zinc-300 transition-colors inline-block origin-left"
+                transition={{ type: "tween", duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
+                className="text-lg font-bold text-white mb-2 font-mono group-hover:text-zinc-300 transition-colors"
               >
                 {course.title}
               </motion.h3>
-              <motion.p
-                layoutId={course.layoutIdDesc}
-                className="text-sm text-zinc-400"
-              >
+              <p className="text-sm text-zinc-400">
                 {course.description}
-              </motion.p>
+              </p>
             </TransitionLink>
           ))}
         </div>

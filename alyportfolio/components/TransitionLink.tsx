@@ -16,10 +16,6 @@ export default function TransitionLink({
 
   const handleTransition = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    
-    // We navigate using standard router push. 
-    // The AnimatePresence in layout.tsx will handle keeping the old page alive 
-    // long enough for the shared layoutId to animate.
     router.push(href);
   };
 

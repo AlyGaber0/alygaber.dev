@@ -7,7 +7,6 @@ export const projectsData = [
     tags: ["Next.js", "React Native", "TypeScript", "Supabase"],
     href: "/projects/vexo",
     layoutIdTitle: "project-title-vexo",
-    layoutIdDesc: "project-desc-vexo",
   },
   {
     id: "norman",
@@ -23,7 +22,6 @@ export const projectsData = [
     ],
     href: "/projects/norman",
     layoutIdTitle: "project-title-norman",
-    layoutIdDesc: "project-desc-norman",
   },
   {
     id: "habit-tracker",
@@ -33,7 +31,6 @@ export const projectsData = [
     tags: ["Next.js", "TypeScript", "Supabase", "PWA"],
     href: "/projects/habit-tracker",
     layoutIdTitle: "project-title-habit-tracker",
-    layoutIdDesc: "project-desc-habit-tracker",
   },
 ];
 
@@ -44,7 +41,6 @@ export const mcgillData = [
     description: "Autonomous robotics and hardware-software integration.",
     href: "/mcgill/ecse-211",
     layoutIdTitle: "mcgill-title-ecse211",
-    layoutIdDesc: "mcgill-desc-ecse211",
   },
   {
     id: "ecse-223",
@@ -52,7 +48,6 @@ export const mcgillData = [
     description: "Software engineering using state machines and UML.",
     href: "/mcgill/ecse-223",
     layoutIdTitle: "mcgill-title-ecse223",
-    layoutIdDesc: "mcgill-desc-ecse223",
   },
   {
     id: "ecse-321",
@@ -60,6 +55,5 @@ export const mcgillData = [
     description: "Full-stack web application development and CI/CD.",
     href: "/mcgill/ecse-321",
     layoutIdTitle: "mcgill-title-ecse321",
-    layoutIdDesc: "mcgill-desc-ecse321",
   }
 ];

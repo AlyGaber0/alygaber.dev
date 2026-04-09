@@ -105,20 +105,14 @@ const renderList = (data: any[]) => (
 export default function CvPage() {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0, transition: { duration: 0.2 } }}
-      // Changed the parent container to gap-8 so the header isn't miles away from the content
+      exit={{ opacity: 0, transition: { duration: 0.15 } }}
       className="flex flex-col gap-8 pb-24"
     >
       <section>
         <div className="flex flex-col">
-          <motion.h1
-            layoutId="main-page-title"
-            className="text-4xl font-bold text-white mb-6 font-mono origin-left"
-          >
+          <h1 className="text-4xl font-bold text-white mb-6 font-mono">
             CV
-          </motion.h1>
+          </h1>
         </div>
         <hr className="border-zinc-800 mt-3" />
       </section>
