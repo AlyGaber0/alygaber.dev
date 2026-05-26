@@ -56,13 +56,10 @@ export default function VexoProject() {
           Overview
         </h3>
         <p className="text-zinc-400 leading-relaxed mb-10">
-          Vexo is a fintech app built for students and young professionals who
-          want to actually understand their money. The idea is to make investing
-          and financial literacy feel less intimidating by combining money
-          management with the social and cultural side of finance. It pulls in
-          real-time data across stocks, crypto, and banking, and uses gamified
-          features to keep people engaged with it. I joined the team as a
-          frontend engineer.
+          Vexo was a fintech platform where users could research stocks, read
+          news and AI-generated insights, and connect their brokerage account to
+          trade directly within the app. The product was in development and never
+          reached customers. Vexo Labs Inc. was dissolved in 2026.
         </p>
 
         <h3 className="text-xl font-bold text-white mb-4 font-mono">
@@ -70,13 +67,13 @@ export default function VexoProject() {
         </h3>
         <ul className="list-disc list-outside ml-4 text-zinc-400 flex flex-col gap-4">
           <li className="leading-relaxed pl-2 marker:text-zinc-600">
-            Design and implement responsive frontend user interfaces from core design specifications using Next.js and Tailwind CSS.
+            Built 4 core customer-facing pages end-to-end — home, login, signup, and market overview — using Next.js, TypeScript, and Tailwind CSS as part of a 6-person engineering team.
           </li>
           <li className="leading-relaxed pl-2 marker:text-zinc-600">
-            Build complex, fluid page transitions and interactive animations using Framer Motion to ensure the app feels modern, engaging, and fast.
+            Designed the Supabase users table handling authentication and profile data; wrote queries and integrated Supabase Auth with protected routing and session management across the frontend.
           </li>
           <li className="leading-relaxed pl-2 marker:text-zinc-600">
-            Bridge the gap between frontend features and backend infrastructure, actively connecting the UI to databases and assisting with the deployment pipeline.
+            Participated in code reviews and PRs as part of the standard engineering workflow.
           </li>
         </ul>
       </motion.div>

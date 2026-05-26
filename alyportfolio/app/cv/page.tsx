@@ -29,12 +29,12 @@ const experienceData = [
   {
     role: "Software Engineering Intern",
     company: "Vexo Labs Inc.",
-    date: "Jan 2026 - Present",
+    date: "Jan 2026 - Apr 2026",
     bullets: [
-      "Engineered production-ready dashboard pages (home, login, signup, market overview) in Next.js and Tailwind CSS, translating designer mockups into pixel-perfect, responsive interfaces with reusable component architecture.",
-      "Collaborated directly with the founding team on Supabase backend integration, contributing to database schema decisions and data-fetching patterns across frontend API calls.",
+      "Built 4 core customer-facing pages end-to-end (home, login, signup, market overview) in Next.js, TypeScript, and Tailwind CSS as part of a 6-person engineering team.",
+      "Designed the Supabase users table handling authentication and profile data; wrote queries and integrated Supabase Auth with protected routing and session management across the frontend.",
     ],
-    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Supabase"],
   },
   {
     role: "Software Engineering Intern",
