@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { projectsData } from "@/lib/data";
+import CommitHeatmap from "@/components/CommitHeatmap";
 
 export default function GablProject() {
   const project = projectsData.find((p) => p.id === "gabl");
@@ -74,18 +75,6 @@ export default function GablProject() {
         </ul>
 
         <h3 className="text-xl font-bold text-white mb-4 font-mono">
-          Language Features
-        </h3>
-        <ul className="list-disc list-outside ml-4 text-zinc-400 flex flex-col gap-4 mb-10">
-          <li className="leading-relaxed pl-2 marker:text-zinc-600">Integer arithmetic with correct operator precedence.</li>
-          <li className="leading-relaxed pl-2 marker:text-zinc-600">Variable assignment and lookup.</li>
-          <li className="leading-relaxed pl-2 marker:text-zinc-600">Print statements.</li>
-          <li className="leading-relaxed pl-2 marker:text-zinc-600">Comparison operators.</li>
-          <li className="leading-relaxed pl-2 marker:text-zinc-600">If statements with else branches.</li>
-          <li className="leading-relaxed pl-2 marker:text-zinc-600">User-defined functions with arguments and return values.</li>
-        </ul>
-
-        <h3 className="text-xl font-bold text-white mb-4 font-mono">
           What Was Learned
         </h3>
         <ul className="list-disc list-outside ml-4 text-zinc-400 flex flex-col gap-4 mb-10">
@@ -96,13 +85,10 @@ export default function GablProject() {
           <li className="leading-relaxed pl-2 marker:text-zinc-600">Lexical analysis, abstract syntax trees, tree traversal, and environment scoping.</li>
         </ul>
 
-        <div className="border border-zinc-800 rounded-lg p-5 bg-zinc-900/30 mb-10">
-          <p className="text-xs font-mono text-zinc-500 uppercase tracking-widest mb-2">Status</p>
-          <p className="text-zinc-400 text-sm leading-relaxed">
-            Lexer complete. Parser complete. Environment complete. Evaluator in progress.
-            Target completion end of June 2026.
-          </p>
-        </div>
+        <h3 className="text-xl font-bold text-white mb-4 font-mono">
+          Commit Activity
+        </h3>
+        <CommitHeatmap />
 
         <a
           href="https://github.com/AlyGaber0/Gabl"

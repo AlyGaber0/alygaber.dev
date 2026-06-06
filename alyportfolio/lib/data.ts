@@ -1,20 +1,20 @@
 
 export const projectsData = [
   {
-    id: "vexo",
-    title: "Vexo",
-    description: "Fintech platform for stock research, news, AI-generated insights, and brokerage trading.",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
-    href: "/projects/vexo",
-    layoutIdTitle: "project-title-vexo",
-  },
-  {
     id: "gabl",
     title: "Gabl",
     description: "A fully custom programming language and interpreter built from scratch in C.",
     tags: ["C", "Interpreters", "Compilers", "Data Structures"],
     href: "/projects/gabl",
     layoutIdTitle: "project-title-gabl",
+  },
+  {
+    id: "vexo",
+    title: "Vexo",
+    description: "Fintech platform for stock research, news, AI-generated insights, and brokerage trading.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
+    href: "/projects/vexo",
+    layoutIdTitle: "project-title-vexo",
   },
   {
     id: "norman",
