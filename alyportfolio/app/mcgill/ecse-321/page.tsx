@@ -8,11 +8,11 @@ export default function Ecse321() {
   if (!course) return null;
 
   return (
-    <div className="pb-24">
+    <motion.div exit={{ opacity: 0, transition: { duration: 0.06 } }} className="pb-24">
       <div className="flex flex-col mb-12">
         <motion.h1
           layoutId={course.layoutIdTitle}
-          transition={{ type: "spring", stiffness: 500, damping: 38 }}
+          transition={{ type: "tween", duration: 0.3, ease: [0.32, 0.72, 0, 1] }}
           className="text-4xl font-bold text-white mb-4 font-mono"
         >
           {course.title}
@@ -83,6 +83,6 @@ export default function Ecse321() {
           </li>
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 }

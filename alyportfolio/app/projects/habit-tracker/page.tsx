@@ -8,11 +8,11 @@ export default function HabitTrackerProject() {
   if (!project) return null;
 
   return (
-    <div>
+    <motion.div exit={{ opacity: 0, transition: { duration: 0.06 } }}>
       <div className="flex flex-col mb-4">
         <motion.h1
           layoutId={project.layoutIdTitle}
-          transition={{ type: "spring", stiffness: 500, damping: 38 }}
+          transition={{ type: "tween", duration: 0.3, ease: [0.32, 0.72, 0, 1] }}
           className="text-4xl font-bold text-white mb-4 font-mono"
         >
           {project.title}
@@ -162,6 +162,6 @@ export default function HabitTrackerProject() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

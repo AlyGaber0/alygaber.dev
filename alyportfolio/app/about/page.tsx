@@ -1,8 +1,10 @@
 "use client";
 
+import { motion } from "framer-motion";
+
 export default function AboutPage() {
   return (
-    <div className="flex flex-col gap-16">
+    <motion.div exit={{ opacity: 0, transition: { duration: 0.06 } }} className="flex flex-col gap-16">
       <section>
         <h1 className="text-4xl font-bold text-white mb-6 font-mono">
           About
@@ -49,6 +51,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 }

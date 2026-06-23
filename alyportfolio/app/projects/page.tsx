@@ -6,7 +6,7 @@ import { projectsData } from "@/lib/data";
 
 export default function ProjectsList() {
   return (
-    <div className="flex flex-col gap-16">
+    <motion.div exit={{ opacity: 0, transition: { duration: 0.06 } }} className="flex flex-col gap-16">
       <section>
         <h1 className="text-4xl font-bold text-white mb-6 font-mono">
           Projects
@@ -23,7 +23,7 @@ export default function ProjectsList() {
           >
             <motion.h3
               layoutId={project.layoutIdTitle}
-              transition={{ type: "spring", stiffness: 500, damping: 38 }}
+              transition={{ type: "tween", duration: 0.3, ease: [0.32, 0.72, 0, 1] }}
               className="text-lg font-bold text-white mb-2 font-mono group-hover:text-zinc-300 transition-colors"
             >
               {project.title}
@@ -46,6 +46,6 @@ export default function ProjectsList() {
           </TransitionLink>
         ))}
       </section>
-    </div>
+    </motion.div>
   );
 }
