@@ -8,13 +8,11 @@ export default function VexoProject() {
   if (!project) return null;
 
   return (
-    <motion.div
-      exit={{ opacity: 0, transition: { duration: 0.15 } }}
-    >
+    <div>
       <div className="flex flex-col mb-4">
         <motion.h1
           layoutId={project.layoutIdTitle}
-          transition={{ type: "tween", duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
+          transition={{ type: "spring", stiffness: 500, damping: 38 }}
           className="text-4xl font-bold text-white mb-4 font-mono"
         >
           {project.title}
@@ -38,12 +36,7 @@ export default function VexoProject() {
         <hr className="border-zinc-800 mt-3 mb-12" />
       </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 5 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.08, duration: 0.45, ease: [0.25, 0.46, 0.45, 0.94] }}
-        className="prose prose-invert prose-zinc max-w-none"
-      >
+      <div className="prose prose-invert prose-zinc max-w-none">
         <div className="w-1/3 mb-10 overflow-hidden ">
           <img
             src="/vexo-full.svg"
@@ -76,7 +69,7 @@ export default function VexoProject() {
             Participated in code reviews and PRs as part of the standard engineering workflow.
           </li>
         </ul>
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 }

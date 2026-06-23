@@ -1,0 +1,476 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic:
+      - link "Skip to main content" [ref=e3] [cursor=pointer]:
+        - /url: "#main-content"
+      - link "Skip to footer" [ref=e4] [cursor=pointer]:
+        - /url: "#footer"
+    - generic [ref=e5]:
+      - link "Home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img [ref=e7]
+      - generic [ref=e9]:
+        - navigation [ref=e10]:
+          - list [ref=e11]:
+            - listitem [ref=e12] [cursor=pointer]:
+              - link "Research" [ref=e13]:
+                - /url: /research
+            - listitem [ref=e14] [cursor=pointer]:
+              - link "Economic Futures" [ref=e15]:
+                - /url: /economic-futures
+            - listitem [ref=e16] [cursor=pointer]:
+              - button "Commitments" [ref=e17]:
+                - generic [ref=e18]: Commitments
+                - img [ref=e19]
+            - listitem [ref=e21] [cursor=pointer]:
+              - button "Learn" [ref=e22]:
+                - generic [ref=e23]: Learn
+                - img [ref=e24]
+            - listitem [ref=e26] [cursor=pointer]:
+              - link "News" [ref=e27]:
+                - /url: /news
+        - generic [ref=e28]:
+          - link "Try Claude" [ref=e29] [cursor=pointer]:
+            - /url: https://claude.ai/
+          - img [ref=e31] [cursor=pointer]
+  - main [ref=e33]:
+    - article [ref=e34]:
+      - generic [ref=e37]:
+        - heading "Research" [level=1] [ref=e39]
+        - generic [ref=e40]:
+          - paragraph [ref=e41]: Our research teams investigate the safety, inner workings, and societal impacts of AI models – so that artificial intelligence has a positive impact as it becomes increasingly capable.
+          - generic [ref=e43]:
+            - generic [ref=e44]: "Research teams:"
+            - link "Alignment" [ref=e45] [cursor=pointer]:
+              - /url: /research/team/alignment
+              - generic [ref=e46]: Alignment
+            - link "Economic Research" [ref=e47] [cursor=pointer]:
+              - /url: /research/team/economic-research
+              - generic [ref=e48]: Economic Research
+            - link "Interpretability" [ref=e49] [cursor=pointer]:
+              - /url: /research/team/interpretability
+              - generic [ref=e50]: Interpretability
+            - link "Societal Impacts" [ref=e51] [cursor=pointer]:
+              - /url: /research/team/societal-impacts
+              - generic [ref=e52]: Societal Impacts
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - heading "Interpretability" [level=3] [ref=e60]
+          - paragraph [ref=e61]: The mission of the Interpretability team is to discover and understand how large language models work internally, as a foundation for AI safety and positive outcomes.
+        - generic [ref=e62]:
+          - heading "Alignment" [level=3] [ref=e63]
+          - paragraph [ref=e64]: The Alignment team works to understand the risks of AI models and develop ways to ensure that future ones remain helpful, honest, and harmless.
+        - generic [ref=e65]:
+          - heading "Societal Impacts" [level=3] [ref=e66]
+          - paragraph [ref=e67]: Working closely with the Anthropic Policy and Safeguards teams, Societal Impacts is a technical research team that explores how AI is used in the real world.
+        - generic [ref=e68]:
+          - heading "Frontier Red Team" [level=3] [ref=e69]
+          - paragraph [ref=e70]: The Frontier Red Team analyzes the implications of frontier AI models for cybersecurity, biosecurity, and autonomous systems.
+      - generic [ref=e75]:
+        - generic [ref=e76]:
+          - figure [ref=e77]:
+            - img "Emotion concepts and their function in a large language model" [ref=e79]
+          - link "Emotion concepts and their function in a large language model Interpretability Apr 2, 2026 All modern language models sometimes act like they have emotions. What’s behind these behaviors? Our interpretability team investigates." [ref=e80] [cursor=pointer]:
+            - /url: /research/emotion-concepts-function
+            - heading "Emotion concepts and their function in a large language model" [level=2] [ref=e81]
+            - generic [ref=e83]:
+              - generic [ref=e84]:
+                - generic [ref=e85]: Interpretability
+                - time [ref=e86]: Apr 2, 2026
+              - paragraph [ref=e87]: All modern language models sometimes act like they have emotions. What’s behind these behaviors? Our interpretability team investigates.
+        - generic [ref=e88]:
+          - link "Societal Impacts Mar 18, 2026 What 81,000 people want from AI We invited Claude.ai users to share how they use AI, what they dream it could make possible, and what they fear it might do. Nearly 81,000 people participated—the largest and most multilingual qualitative study of its kind. Here's what we found." [ref=e89] [cursor=pointer]:
+            - /url: /81k-interviews
+            - generic [ref=e90]:
+              - generic [ref=e91]: Societal Impacts
+              - time [ref=e92]: Mar 18, 2026
+            - heading "What 81,000 people want from AI" [level=4] [ref=e93]
+            - paragraph [ref=e94]: We invited Claude.ai users to share how they use AI, what they dream it could make possible, and what they fear it might do. Nearly 81,000 people participated—the largest and most multilingual qualitative study of its kind. Here's what we found.
+          - 'link "Economic Research Mar 5, 2026 Labor market impacts of AI: A new measure and early evidence In this paper, we present a new framework for understanding AI’s labor market impacts, and test it against early data." [ref=e95] [cursor=pointer]':
+            - /url: /research/labor-market-impacts
+            - generic [ref=e96]:
+              - generic [ref=e97]: Economic Research
+              - time [ref=e98]: Mar 5, 2026
+            - 'heading "Labor market impacts of AI: A new measure and early evidence" [level=4] [ref=e99]'
+            - paragraph [ref=e100]: In this paper, we present a new framework for understanding AI’s labor market impacts, and test it against early data.
+          - 'link "Policy Dec 18, 2025 Project Vend: Phase two In June, we revealed that we’d set up a small shop in our San Francisco office lunchroom, run by an AI shopkeeper. It was part of Project Vend, a free-form experiment exploring how well AIs could do on complex, real-world tasks. How has Claude''s business been since we last wrote?" [ref=e101] [cursor=pointer]':
+            - /url: /research/project-vend-2
+            - generic [ref=e102]:
+              - generic [ref=e103]: Policy
+              - time [ref=e104]: Dec 18, 2025
+            - 'heading "Project Vend: Phase two" [level=4] [ref=e105]'
+            - paragraph [ref=e106]: In June, we revealed that we’d set up a small shop in our San Francisco office lunchroom, run by an AI shopkeeper. It was part of Project Vend, a free-form experiment exploring how well AIs could do on complex, real-world tasks. How has Claude's business been since we last wrote?
+          - 'link "Alignment Feb 3, 2025 Constitutional Classifiers: Defending against universal jailbreaks These classifiers filter the overwhelming majority of jailbreaks while maintaining practical deployment. A prototype withstood over 3,000 hours of red teaming with no universal jailbreak discovered." [ref=e107] [cursor=pointer]':
+            - /url: /research/constitutional-classifiers
+            - generic [ref=e108]:
+              - generic [ref=e109]: Alignment
+              - time [ref=e110]: Feb 3, 2025
+            - 'heading "Constitutional Classifiers: Defending against universal jailbreaks" [level=4] [ref=e111]'
+            - paragraph [ref=e112]: These classifiers filter the overwhelming majority of jailbreaks while maintaining practical deployment. A prototype withstood over 3,000 hours of red teaming with no universal jailbreak discovered.
+      - generic [ref=e116]:
+        - generic [ref=e117]:
+          - heading "Publications" [level=2] [ref=e118]
+          - generic [ref=e119]:
+            - generic [ref=e120]: Search
+            - img
+            - textbox "Search" [ref=e121]
+        - generic [ref=e122]:
+          - generic [ref=e123]:
+            - generic [ref=e124]:
+              - generic [ref=e125]: Date
+              - generic [ref=e126]: Category
+              - generic [ref=e127]: Title
+            - list [ref=e128]:
+              - listitem [ref=e129]:
+                - link "Apr 2, 2026 Interpretability Emotion concepts and their function in a large language model" [ref=e130] [cursor=pointer]:
+                  - /url: /research/emotion-concepts-function
+                  - generic [ref=e131]:
+                    - time [ref=e132]: Apr 2, 2026
+                    - generic [ref=e133]: Interpretability
+                  - generic [ref=e134]: Emotion concepts and their function in a large language model
+              - listitem [ref=e135]:
+                - 'link "Mar 31, 2026 Economic Research How Australia Uses Claude: Findings from the Anthropic Economic Index" [ref=e136] [cursor=pointer]':
+                  - /url: /research/how-australia-uses-claude
+                  - generic [ref=e137]:
+                    - time [ref=e138]: Mar 31, 2026
+                    - generic [ref=e139]: Economic Research
+                  - generic [ref=e140]: "How Australia Uses Claude: Findings from the Anthropic Economic Index"
+              - listitem [ref=e141]:
+                - 'link "Mar 24, 2026 Economic Research Anthropic Economic Index report: Learning curves" [ref=e142] [cursor=pointer]':
+                  - /url: /research/economic-index-march-2026-report
+                  - generic [ref=e143]:
+                    - time [ref=e144]: Mar 24, 2026
+                    - generic [ref=e145]: Economic Research
+                  - generic [ref=e146]: "Anthropic Economic Index report: Learning curves"
+              - listitem [ref=e147]:
+                - link "Mar 23, 2026 Science Introducing our Science Blog" [ref=e148] [cursor=pointer]:
+                  - /url: /research/introducing-anthropic-science
+                  - generic [ref=e149]:
+                    - time [ref=e150]: Mar 23, 2026
+                    - generic [ref=e151]: Science
+                  - generic [ref=e152]: Introducing our Science Blog
+              - listitem [ref=e153]:
+                - link "Mar 23, 2026 Science Long-running Claude for scientific computing" [ref=e154] [cursor=pointer]:
+                  - /url: /research/long-running-Claude
+                  - generic [ref=e155]:
+                    - time [ref=e156]: Mar 23, 2026
+                    - generic [ref=e157]: Science
+                  - generic [ref=e158]: Long-running Claude for scientific computing
+              - listitem [ref=e159]:
+                - 'link "Mar 23, 2026 Science Vibe physics: The AI grad student" [ref=e160] [cursor=pointer]':
+                  - /url: /research/vibe-physics
+                  - generic [ref=e161]:
+                    - time [ref=e162]: Mar 23, 2026
+                    - generic [ref=e163]: Science
+                  - generic [ref=e164]: "Vibe physics: The AI grad student"
+              - listitem [ref=e165]:
+                - 'link "Mar 13, 2026 Interpretability A “diff” tool for AI: Finding behavioral differences in new models" [ref=e166] [cursor=pointer]':
+                  - /url: /research/diff-tool
+                  - generic [ref=e167]:
+                    - time [ref=e168]: Mar 13, 2026
+                    - generic [ref=e169]: Interpretability
+                  - generic [ref=e170]: "A “diff” tool for AI: Finding behavioral differences in new models"
+              - listitem [ref=e171]:
+                - link "Mar 6, 2026 Policy Partnering with Mozilla to improve Firefox’s security" [ref=e172] [cursor=pointer]:
+                  - /url: /news/mozilla-firefox-security
+                  - generic [ref=e173]:
+                    - time [ref=e174]: Mar 6, 2026
+                    - generic [ref=e175]: Policy
+                  - generic [ref=e176]: Partnering with Mozilla to improve Firefox’s security
+              - listitem [ref=e177]:
+                - 'link "Mar 5, 2026 Economic Research Labor market impacts of AI: A new measure and early evidence" [ref=e178] [cursor=pointer]':
+                  - /url: /research/labor-market-impacts
+                  - generic [ref=e179]:
+                    - time [ref=e180]: Mar 5, 2026
+                    - generic [ref=e181]: Economic Research
+                  - generic [ref=e182]: "Labor market impacts of AI: A new measure and early evidence"
+              - listitem [ref=e183]:
+                - link "Feb 25, 2026 Alignment An update on our model deprecation commitments for Claude Opus 3" [ref=e184] [cursor=pointer]:
+                  - /url: /research/deprecation-updates-opus-3
+                  - generic [ref=e185]:
+                    - time [ref=e186]: Feb 25, 2026
+                    - generic [ref=e187]: Alignment
+                  - generic [ref=e188]: An update on our model deprecation commitments for Claude Opus 3
+            - link "See more" [ref=e189] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e190]: See more
+              - img [ref=e192]
+          - complementary [ref=e194]
+      - generic [ref=e198]:
+        - paragraph [ref=e200]: Join the Research team
+        - link "See open roles" [ref=e201] [cursor=pointer]:
+          - /url: /jobs
+          - generic [ref=e202]: See open roles
+          - img [ref=e204]
+  - contentinfo "Site footer" [ref=e206]:
+    - generic [ref=e207]:
+      - link "Return to homepage" [ref=e209] [cursor=pointer]:
+        - /url: /
+        - img [ref=e210]
+      - navigation "Footer navigation" [ref=e212]:
+        - generic [ref=e213]:
+          - generic [ref=e214]:
+            - heading "Products" [level=3] [ref=e215]
+            - list [ref=e216]:
+              - listitem [ref=e217]:
+                - link "Claude" [ref=e218] [cursor=pointer]:
+                  - /url: https://claude.com/product/overview
+              - listitem [ref=e219]:
+                - link "Claude Code" [ref=e220] [cursor=pointer]:
+                  - /url: https://claude.com/product/claude-code
+              - listitem [ref=e221]:
+                - link "Claude Code Enterprise" [ref=e222] [cursor=pointer]:
+                  - /url: https://claude.com/product/claude-code/enterprise
+              - listitem [ref=e223]:
+                - link "Claude Code Security" [ref=e224] [cursor=pointer]:
+                  - /url: https://claude.com/claude-code-security
+              - listitem [ref=e225]:
+                - link "Claude Cowork" [ref=e226] [cursor=pointer]:
+                  - /url: https://claude.com/product/cowork
+              - listitem [ref=e227]:
+                - link "Claude for Chrome" [ref=e228] [cursor=pointer]:
+                  - /url: https://claude.com/chrome
+              - listitem [ref=e229]:
+                - link "Claude for Excel" [ref=e230] [cursor=pointer]:
+                  - /url: https://claude.com/claude-for-excel
+              - listitem [ref=e231]:
+                - link "Claude for PowerPoint" [ref=e232] [cursor=pointer]:
+                  - /url: https://claude.com/claude-for-powerpoint
+              - listitem [ref=e233]:
+                - link "Claude for Slack" [ref=e234] [cursor=pointer]:
+                  - /url: https://claude.com/claude-for-slack
+              - listitem [ref=e235]:
+                - link "Skills" [ref=e236] [cursor=pointer]:
+                  - /url: https://www.claude.com/skills
+              - listitem [ref=e237]:
+                - link "Max plan" [ref=e238] [cursor=pointer]:
+                  - /url: https://claude.com/pricing/max
+              - listitem [ref=e239]:
+                - link "Team plan" [ref=e240] [cursor=pointer]:
+                  - /url: https://claude.com/pricing/team
+              - listitem [ref=e241]:
+                - link "Enterprise plan" [ref=e242] [cursor=pointer]:
+                  - /url: https://claude.com/pricing/enterprise
+              - listitem [ref=e243]:
+                - link "Download app" [ref=e244] [cursor=pointer]:
+                  - /url: https://claude.ai/download
+              - listitem [ref=e245]:
+                - link "Pricing" [ref=e246] [cursor=pointer]:
+                  - /url: https://claude.com/pricing
+              - listitem [ref=e247]:
+                - link "Log in to Claude" [ref=e248] [cursor=pointer]:
+                  - /url: https://claude.ai/
+          - generic [ref=e249]:
+            - heading "Models" [level=3] [ref=e250]
+            - list [ref=e251]:
+              - listitem [ref=e252]:
+                - link "Mythos preview" [ref=e253] [cursor=pointer]:
+                  - /url: https://www.anthropic.com/glasswing
+              - listitem [ref=e254]:
+                - link "Opus" [ref=e255] [cursor=pointer]:
+                  - /url: https://www.anthropic.com/claude/opus
+              - listitem [ref=e256]:
+                - link "Sonnet" [ref=e257] [cursor=pointer]:
+                  - /url: https://www.anthropic.com/claude/sonnet
+              - listitem [ref=e258]:
+                - link "Haiku" [ref=e259] [cursor=pointer]:
+                  - /url: https://www.anthropic.com/claude/haiku
+        - generic [ref=e260]:
+          - generic [ref=e261]:
+            - heading "Solutions" [level=3] [ref=e262]
+            - list [ref=e263]:
+              - listitem [ref=e264]:
+                - link "AI agents" [ref=e265] [cursor=pointer]:
+                  - /url: https://claude.com/solutions/agents
+              - listitem [ref=e266]:
+                - link "Code modernization" [ref=e267] [cursor=pointer]:
+                  - /url: https://claude.com/solutions/code-modernization
+              - listitem [ref=e268]:
+                - link "Coding" [ref=e269] [cursor=pointer]:
+                  - /url: https://claude.com/solutions/coding
+              - listitem [ref=e270]:
+                - link "Customer support" [ref=e271] [cursor=pointer]:
+                  - /url: https://claude.com/solutions/customer-support
+              - listitem [ref=e272]:
+                - link "Education" [ref=e273] [cursor=pointer]:
+                  - /url: https://claude.com/solutions/education
+              - listitem [ref=e274]:
+                - link "Financial services" [ref=e275] [cursor=pointer]:
+                  - /url: https://claude.com/solutions/financial-services
+              - listitem [ref=e276]:
+                - link "Government" [ref=e277] [cursor=pointer]:
+                  - /url: https://claude.com/solutions/government
+              - listitem [ref=e278]:
+                - link "Healthcare" [ref=e279] [cursor=pointer]:
+                  - /url: https://claude.com/solutions/healthcare
+              - listitem [ref=e280]:
+                - link "Life sciences" [ref=e281] [cursor=pointer]:
+                  - /url: https://claude.com/solutions/life-sciences
+              - listitem [ref=e282]:
+                - link "Nonprofits" [ref=e283] [cursor=pointer]:
+                  - /url: https://claude.com/solutions/nonprofits
+              - listitem [ref=e284]:
+                - link "Security" [ref=e285] [cursor=pointer]:
+                  - /url: https://claude.com/solutions/security
+          - generic [ref=e286]:
+            - heading "Claude Platform" [level=3] [ref=e287]
+            - list [ref=e288]:
+              - listitem [ref=e289]:
+                - link "Overview" [ref=e290] [cursor=pointer]:
+                  - /url: https://claude.com/platform/api
+              - listitem [ref=e291]:
+                - link "Developer docs" [ref=e292] [cursor=pointer]:
+                  - /url: https://platform.claude.com/docs
+              - listitem [ref=e293]:
+                - link "Pricing" [ref=e294] [cursor=pointer]:
+                  - /url: https://claude.com/pricing#api
+              - listitem [ref=e295]:
+                - link "Marketplace" [ref=e296] [cursor=pointer]:
+                  - /url: https://claude.com/platform/marketplace
+              - listitem [ref=e297]:
+                - link "Regional compliance" [ref=e298] [cursor=pointer]:
+                  - /url: https://claude.com/regional-compliance
+              - listitem [ref=e299]:
+                - link "Amazon Bedrock" [ref=e300] [cursor=pointer]:
+                  - /url: https://claude.com/partners/amazon-bedrock
+              - listitem [ref=e301]:
+                - link "Google Cloud’s Vertex AI" [ref=e302] [cursor=pointer]:
+                  - /url: https://claude.com/partners/google-cloud-vertex-ai
+              - listitem [ref=e303]:
+                - link "Microsoft Foundry" [ref=e304] [cursor=pointer]:
+                  - /url: https://claude.com/partners/microsoft-foundry
+              - listitem [ref=e305]:
+                - link "Console login" [ref=e306] [cursor=pointer]:
+                  - /url: https://platform.claude.com/
+        - generic [ref=e307]:
+          - generic [ref=e308]:
+            - heading "Resources" [level=3] [ref=e309]
+            - list [ref=e310]:
+              - listitem [ref=e311]:
+                - link "Blog" [ref=e312] [cursor=pointer]:
+                  - /url: https://claude.com/blog
+              - listitem [ref=e313]:
+                - link "Claude partner network" [ref=e314] [cursor=pointer]:
+                  - /url: https://claude.com/partners
+              - listitem [ref=e315]:
+                - link "Community" [ref=e316] [cursor=pointer]:
+                  - /url: https://claude.com/community
+              - listitem [ref=e317]:
+                - link "Connectors" [ref=e318] [cursor=pointer]:
+                  - /url: https://claude.com/connectors
+              - listitem [ref=e319]:
+                - link "Courses" [ref=e320] [cursor=pointer]:
+                  - /url: /learn
+              - listitem [ref=e321]:
+                - link "Customer stories" [ref=e322] [cursor=pointer]:
+                  - /url: https://claude.com/customers
+              - listitem [ref=e323]:
+                - link "Engineering at Anthropic" [ref=e324] [cursor=pointer]:
+                  - /url: /engineering
+              - listitem [ref=e325]:
+                - link "Events" [ref=e326] [cursor=pointer]:
+                  - /url: /events
+              - listitem [ref=e327]:
+                - link "Inside Claude Code" [ref=e328] [cursor=pointer]:
+                  - /url: /product/claude-code
+              - listitem [ref=e329]:
+                - link "Inside Claude Cowork" [ref=e330] [cursor=pointer]:
+                  - /url: /product/claude-cowork
+              - listitem [ref=e331]:
+                - link "Plugins" [ref=e332] [cursor=pointer]:
+                  - /url: https://claude.com/plugins
+              - listitem [ref=e333]:
+                - link "Powered by Claude" [ref=e334] [cursor=pointer]:
+                  - /url: https://claude.com/partners/powered-by-claude
+              - listitem [ref=e335]:
+                - link "Service partners" [ref=e336] [cursor=pointer]:
+                  - /url: https://claude.com/partners/services
+              - listitem [ref=e337]:
+                - link "Startups program" [ref=e338] [cursor=pointer]:
+                  - /url: https://claude.com/programs/startups
+              - listitem [ref=e339]:
+                - link "Tutorials" [ref=e340] [cursor=pointer]:
+                  - /url: https://claude.com/resources/tutorials
+              - listitem [ref=e341]:
+                - link "Use cases" [ref=e342] [cursor=pointer]:
+                  - /url: https://claude.com/resources/use-cases
+          - generic [ref=e343]:
+            - heading "Help and security" [level=3] [ref=e344]
+            - list [ref=e345]:
+              - listitem [ref=e346]:
+                - link "Availability" [ref=e347] [cursor=pointer]:
+                  - /url: https://www.anthropic.com/supported-countries
+              - listitem [ref=e348]:
+                - link "Status" [ref=e349] [cursor=pointer]:
+                  - /url: https://status.anthropic.com/
+              - listitem [ref=e350]:
+                - link "Support center" [ref=e351] [cursor=pointer]:
+                  - /url: https://support.claude.com/en/
+        - generic [ref=e352]:
+          - generic [ref=e353]:
+            - heading "Company" [level=3] [ref=e354]
+            - list [ref=e355]:
+              - listitem [ref=e356]:
+                - link "Anthropic" [ref=e357] [cursor=pointer]:
+                  - /url: /company
+              - listitem [ref=e358]:
+                - link "Careers" [ref=e359] [cursor=pointer]:
+                  - /url: /careers
+              - listitem [ref=e360]:
+                - link "Economic Futures" [ref=e361] [cursor=pointer]:
+                  - /url: /economic-index
+              - listitem [ref=e362]:
+                - link "Research" [ref=e363] [cursor=pointer]:
+                  - /url: /research
+              - listitem [ref=e364]:
+                - link "News" [ref=e365] [cursor=pointer]:
+                  - /url: /news
+              - listitem [ref=e366]:
+                - link "Claude’s Constitution" [ref=e367] [cursor=pointer]:
+                  - /url: /constitution
+              - listitem [ref=e368]:
+                - link "Responsible Scaling Policy" [ref=e369] [cursor=pointer]:
+                  - /url: https://www.anthropic.com/news/announcing-our-updated-responsible-scaling-policy
+              - listitem [ref=e370]:
+                - link "Security and compliance" [ref=e371] [cursor=pointer]:
+                  - /url: https://trust.anthropic.com/
+              - listitem [ref=e372]:
+                - link "Transparency" [ref=e373] [cursor=pointer]:
+                  - /url: /transparency
+          - generic [ref=e374]:
+            - heading "Terms and policies" [level=3] [ref=e375]
+            - list [ref=e376]:
+              - listitem [ref=e377]:
+                - link "Privacy policy" [ref=e378] [cursor=pointer]:
+                  - /url: https://www.anthropic.com/legal/privacy
+              - listitem [ref=e379]:
+                - link "Consumer health data privacy policy" [ref=e380] [cursor=pointer]:
+                  - /url: https://www.anthropic.com/legal/consumer-health-data-privacy-policy
+              - listitem [ref=e381]:
+                - link "Responsible disclosure policy" [ref=e382] [cursor=pointer]:
+                  - /url: https://www.anthropic.com/responsible-disclosure-policy
+              - listitem [ref=e383]:
+                - 'link "Terms of service: Commercial" [ref=e384] [cursor=pointer]':
+                  - /url: https://www.anthropic.com/legal/commercial-terms
+              - listitem [ref=e385]:
+                - 'link "Terms of service: Consumer" [ref=e386] [cursor=pointer]':
+                  - /url: https://www.anthropic.com/legal/consumer-terms
+              - listitem [ref=e387]:
+                - link "Usage policy" [ref=e388] [cursor=pointer]:
+                  - /url: https://www.anthropic.com/legal/aup
+      - generic [ref=e389]:
+        - contentinfo [ref=e390]: © 2026 Anthropic PBC
+        - navigation "Social media links" [ref=e391]:
+          - listitem [ref=e392]:
+            - link "Visit our LinkedIn page" [ref=e393] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/anthropicresearch
+              - img [ref=e394]
+          - listitem [ref=e396]:
+            - link "Visit our X (formerly Twitter) profile" [ref=e397] [cursor=pointer]:
+              - /url: https://x.com/AnthropicAI
+              - img [ref=e398]
+          - listitem [ref=e400]:
+            - link "Visit our YouTube channel" [ref=e401] [cursor=pointer]:
+              - /url: https://www.youtube.com/@anthropic-ai
+              - img [ref=e402]
+  - alert [ref=e404]

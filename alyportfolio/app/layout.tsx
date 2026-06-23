@@ -63,7 +63,7 @@ export default function RootLayout({
           </nav>
 
           <main className="w-full flex-grow">
-            <AnimatePresence mode="wait">
+            <AnimatePresence>
               <div key={pathname} className="w-full h-full">
                 {children}
               </div>

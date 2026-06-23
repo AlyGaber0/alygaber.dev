@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Download } from "lucide-react";
 
 const skillsData = {
@@ -123,10 +122,7 @@ const renderList = (data: typeof experienceData) => (
 
 export default function CvPage() {
   return (
-    <motion.div
-      exit={{ opacity: 0, transition: { duration: 0.15 } }}
-      className="flex flex-col gap-8 pb-24"
-    >
+    <div className="flex flex-col gap-8 pb-24">
       <section>
         <div className="flex items-center justify-between mb-6">
           <h1 className="text-4xl font-bold text-white font-mono">CV</h1>
@@ -202,6 +198,6 @@ export default function CvPage() {
           {renderList(extracurricularData)}
         </section>
       </div>
-    </motion.div>
+    </div>
   );
 }

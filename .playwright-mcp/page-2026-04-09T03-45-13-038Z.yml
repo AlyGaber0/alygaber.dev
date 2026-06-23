@@ -1,0 +1,669 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic:
+      - link "Skip to main content" [ref=e3] [cursor=pointer]:
+        - /url: "#main-content"
+      - link "Skip to footer" [ref=e4] [cursor=pointer]:
+        - /url: "#footer"
+    - generic [ref=e5]:
+      - link "Home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img [ref=e7]
+      - generic [ref=e9]:
+        - navigation [ref=e10]:
+          - list [ref=e11]:
+            - listitem [ref=e12] [cursor=pointer]:
+              - link "Research" [ref=e13]:
+                - /url: /research
+            - listitem [ref=e14] [cursor=pointer]:
+              - link "Economic Futures" [ref=e15]:
+                - /url: /economic-futures
+            - listitem [ref=e16] [cursor=pointer]:
+              - button "Commitments" [ref=e17]:
+                - generic [ref=e18]: Commitments
+                - img [ref=e19]
+            - listitem [ref=e21] [cursor=pointer]:
+              - button "Learn" [ref=e22]:
+                - generic [ref=e23]: Learn
+                - img [ref=e24]
+            - listitem [ref=e26] [cursor=pointer]:
+              - link "News" [ref=e27]:
+                - /url: /news
+        - generic [ref=e28]:
+          - link "Try Claude" [ref=e29] [cursor=pointer]:
+            - /url: https://claude.ai/
+          - img [ref=e31] [cursor=pointer]
+  - main [ref=e33]:
+    - generic [ref=e34]:
+      - generic [ref=e37]:
+        - heading "Project Glasswing" [level=1] [ref=e38]
+        - generic [ref=e39]:
+          - paragraph [ref=e40]: Securing critical software for the AI era
+          - button "Continue reading" [ref=e41] [cursor=pointer]
+      - generic [ref=e44]:
+        - complementary [ref=e45]:
+          - paragraph [ref=e46]: Table of Contents
+          - generic [ref=e47]:
+            - link "Introduction" [ref=e48] [cursor=pointer]:
+              - /url: "#introduction"
+              - generic [ref=e50]: Introduction
+            - link "Cybersecurity in the age of AI" [ref=e51] [cursor=pointer]:
+              - /url: "#cybersecurity-in-the-age-of-ai"
+              - generic [ref=e53]: Cybersecurity in the age of AI
+            - link "Identifying vulnerabilities and exploits with Claude Mythos Preview" [ref=e54] [cursor=pointer]:
+              - /url: "#identifying-vulnerabilities-and-exploits-with-claude-mythos-preview"
+              - generic [ref=e56]: Identifying vulnerabilities and exploits with Claude Mythos Preview
+            - link "Plans for Project Glasswing" [ref=e57] [cursor=pointer]:
+              - /url: "#plans-for-project-glasswing"
+              - generic [ref=e59]: Plans for Project Glasswing
+        - generic [ref=e62]:
+          - heading "Introduction" [level=2]
+          - heading "Today we’re announcing Project Glasswing1, a new initiative that brings together Amazon Web Services, Anthropic, Apple, Broadcom, Cisco, CrowdStrike, Google, JPMorganChase, the Linux Foundation, Microsoft, NVIDIA, and Palo Alto Networks in an effort to secure the world’s most critical software." [level=4] [ref=e63]:
+            - text: Today we’re announcing Project Glasswing
+            - superscript [ref=e64]: "1"
+            - text: ", a new initiative that brings together Amazon Web Services, Anthropic, Apple, Broadcom, Cisco, CrowdStrike, Google, JPMorganChase, the Linux Foundation, Microsoft, NVIDIA, and Palo Alto Networks in an effort to secure the world’s most critical software."
+          - paragraph [ref=e65]:
+            - text: We formed Project Glasswing because of capabilities we’ve observed in a new frontier model trained by Anthropic that we believe could reshape cybersecurity. Claude Mythos
+            - superscript [ref=e66]: "2"
+            - text: "Preview is a general-purpose, unreleased frontier model that reveals a stark fact: AI models have reached a level of coding capability where they can surpass all but the most skilled humans at finding and exploiting software vulnerabilities."
+          - paragraph [ref=e67]:
+            - text: Mythos Preview has already found thousands of high-severity vulnerabilities, including some in
+            - emphasis [ref=e68]: every major operating system and web browser
+            - text: . Given the rate of AI progress, it will not be long before such capabilities proliferate, potentially beyond actors who are committed to deploying them safely. The fallout—for economies, public safety, and national security—could be severe. Project Glasswing is an urgent attempt to put these capabilities to work for defensive purposes.
+          - paragraph [ref=e69]: As part of Project Glasswing, the launch partners listed above will use Mythos Preview as part of their defensive security work; Anthropic will share what we learn so the whole industry can benefit. We have also extended access to a group of over 40 additional organizations that build or maintain critical software infrastructure so they can use the model to scan and secure both first-party and open-source systems. Anthropic is committing up to $100M in usage credits for Mythos Preview across these efforts, as well as $4M in direct donations to open-source security organizations.
+          - paragraph [ref=e70]: "Project Glasswing is a starting point. No one organization can solve these cybersecurity problems alone: frontier AI developers, other software companies, security researchers, open-source maintainers, and governments across the world all have essential roles to play. The work of defending the world’s cyber infrastructure might take years; frontier AI capabilities are likely to advance substantially over just the next few months. For cyber defenders to come out ahead, we need to act now."
+        - generic [ref=e87]:
+          - paragraph
+          - heading "Cybersecurity in the age of AI" [level=2] [ref=e89]
+          - paragraph
+          - paragraph [ref=e90]: The software that all of us rely on every day—responsible for running banking systems, storing medical records, linking up logistics networks, keeping power grids functioning, and much more—has always contained bugs. Many are minor, but some are serious security flaws that, if discovered, could allow cyberattackers to hijack systems, disrupt operations, or steal data.
+          - paragraph [ref=e91]:
+            - text: We have already seen the serious consequences of cyberattacks for important
+            - link "corporate networks" [ref=e92] [cursor=pointer]:
+              - /url: https://cloud.google.com/blog/topics/threat-intelligence/oracle-ebusiness-suite-zero-day-exploitation
+            - text: ","
+            - link "healthcare systems" [ref=e93] [cursor=pointer]:
+              - /url: https://www.nao.org.uk/reports/investigation-wannacry-cyber-attack-and-the-nhs/
+            - text: ","
+            - link "energy infrastructure" [ref=e94] [cursor=pointer]:
+              - /url: https://www.cisa.gov/news-events/news/attack-colonial-pipeline-what-weve-learned-what-weve-done-over-past-two-years
+            - text: ","
+            - link "transport hubs" [ref=e95] [cursor=pointer]:
+              - /url: https://www.lawfaremedia.org/article/lessons-from-the-european-airports-ransomware-attack
+            - text: ", and the information security of"
+            - link "government" [ref=e96] [cursor=pointer]:
+              - /url: https://www.reuters.com/world/us/hackers-solarwinds-breach-stole-data-us-sanctions-policy-intelligence-probes-2021-10-07/
+            - link "agencies" [ref=e97] [cursor=pointer]:
+              - /url: https://www.reuters.com/technology/cybersecurity/us-treasurys-workstations-hacked-cyberattack-by-china-afp-reports-2024-12-30/
+            - link "across" [ref=e98] [cursor=pointer]:
+              - /url: https://lordslibrary.parliament.uk/cyber-security-and-the-uk-government/
+            - text: the world. On the global stage, state-sponsored attacks from actors like China, Iran, North Korea, and Russia have threatened to compromise the infrastructure that underpins both civilian life and military readiness. Even smaller-scale attacks, such as those where individual
+            - link "hospitals" [ref=e99] [cursor=pointer]:
+              - /url: https://www.sciencedirect.com/science/article/pii/S2950386825000103
+            - text: or
+            - link "schools" [ref=e100] [cursor=pointer]:
+              - /url: https://www.vic.gov.au/cyber-incident-impacting-victorian-government-schools
+            - text: are targeted, can still inflict substantial economic damage, expose sensitive data, and even put lives at risk. The current global financial costs of cybercrime are challenging to estimate, but might be
+            - link "around $500B" [ref=e101] [cursor=pointer]:
+              - /url: https://www.governance.ai/research-paper/estimating-global-yearly-cybercrime-damage-costs
+            - text: every year.
+          - paragraph [ref=e102]:
+            - text: Many flaws in software go unnoticed for years because finding and exploiting them has required expertise held by only a few skilled security experts. With the latest frontier AI models, the cost, effort, and level of expertise required to find and exploit software vulnerabilities have all dropped dramatically.
+            - link "Over the past year" [ref=e103] [cursor=pointer]:
+              - /url: https://www.anthropic.com/research/building-ai-cyber-defenders
+            - text: ", AI models have become increasingly effective at reading and reasoning about code—in particular, they show a striking ability to spot"
+            - link "vulnerabilities" [ref=e104] [cursor=pointer]:
+              - /url: https://red.anthropic.com/2026/firefox/
+            - text: and work out ways to
+            - link "exploit" [ref=e105] [cursor=pointer]:
+              - /url: https://red.anthropic.com/2026/exploit/
+            - text: them. Claude Mythos Preview demonstrates a leap in these cyber skills—the vulnerabilities it has spotted have in some cases survived decades of human review and millions of automated security tests, and the exploits it develops are increasingly sophisticated.
+          - paragraph [ref=e106]:
+            - text: Ten years after the first
+            - link "DARPA Cyber Grand Challenge" [ref=e107] [cursor=pointer]:
+              - /url: https://www.darpa.mil/research/programs/cyber-grand-challenge
+            - text: ", frontier AI models are now becoming competitive with the best humans at finding and exploiting vulnerabilities. Without the"
+            - link "necessary safeguards" [ref=e108] [cursor=pointer]:
+              - /url: https://openai.com/index/strengthening-cyber-resilience/
+            - text: ", these powerful cyber capabilities could be used to exploit the many existing flaws in the world’s most important software. This could make cyberattacks of all kinds much more frequent and destructive, and empower adversaries of the United States and its allies. Addressing these issues is therefore an important security priority for democratic states."
+          - paragraph [ref=e109]: "Although the risks from AI-augmented cyberattacks are serious, there is reason for optimism: the same capabilities that make AI models dangerous in the wrong hands make them invaluable for finding and fixing flaws in important software—and for producing new software with far fewer security bugs. Project Glasswing is an important step toward giving defenders a durable advantage in the coming AI-driven era of cybersecurity."
+        - button "Play video" [ref=e113] [cursor=pointer]:
+          - img [ref=e116]
+        - generic [ref=e120]:
+          - paragraph
+          - heading "Identifying vulnerabilities and exploits with Claude Mythos Preview" [level=2] [ref=e122]
+          - paragraph
+          - paragraph [ref=e123]: Over the past few weeks, we have used Claude Mythos Preview to identify thousands of zero-day vulnerabilities (that is, flaws that were previously unknown to the software’s developers), many of them critical, in every major operating system and every major web browser, along with a range of other important pieces of software.
+          - paragraph [ref=e124]:
+            - text: In a post on our
+            - link "Frontier Red Team blog" [ref=e125] [cursor=pointer]:
+              - /url: "https://red.anthropic.com/2026/mythos-preview "
+            - text: ", we provide technical details for a subset of these vulnerabilities that have already been patched and, in some cases, the ways that Mythos Preview found to exploit them. It was able to identify nearly all of these vulnerabilities—and develop many related exploits—entirely autonomously, without any human steering. The following are three examples:"
+          - list [ref=e126]:
+            - listitem [ref=e127]: Mythos Preview found a 27-year-old vulnerability in OpenBSD—which has a reputation as one of the most security-hardened operating systems in the world and is used to run firewalls and other critical infrastructure. The vulnerability allowed an attacker to remotely crash any machine running the operating system just by connecting to it;
+            - listitem [ref=e128]: It also discovered a 16-year-old vulnerability in FFmpeg—which is used by innumerable pieces of software to encode and decode video—in a line of code that automated testing tools had hit five million times without ever catching the problem;
+            - listitem [ref=e129]: The model autonomously found and chained together several vulnerabilities in the Linux kernel—the software that runs most of the world’s servers—to allow an attacker to escalate from ordinary user access to complete control of the machine.
+          - paragraph [ref=e130]: We have reported the above vulnerabilities to the maintainers of the relevant software, and they have all now been patched. For many other vulnerabilities, we are providing a cryptographic hash of the details today (see the Red Team blog), and we will reveal the specifics after a fix is in place.
+          - paragraph [ref=e131]: "Evaluation benchmarks such as CyberGym reinforce the substantial difference between Mythos Preview and our next-best model, Claude Opus 4.6:"
+          - generic [ref=e132]:
+            - paragraph [ref=e133]: Cybersecurity Vulnerability Reproduction
+            - generic [ref=e136]:
+              - paragraph [ref=e138]: CyberGym
+              - generic [ref=e139]:
+                - generic [ref=e140]: Mythos Preview
+                - generic [ref=e143]: 83.1%
+              - generic [ref=e144]:
+                - generic [ref=e145]: Opus 4.6
+                - generic [ref=e148]: 66.6%
+          - paragraph [ref=e149]: "In addition to our own work, many of our partners have already been using Claude Mythos Preview for several weeks. This is what they’ve found:"
+          - generic [ref=e150]:
+            - generic [ref=e161]:
+              - button "Previous quote" [disabled] [ref=e162]:
+                - img [ref=e163]
+              - generic [ref=e165]: 01 / 08
+              - button "Next quote" [ref=e166] [cursor=pointer]:
+                - img [ref=e167]
+            - generic [ref=e169]:
+              - generic [ref=e170]:
+                - paragraph [ref=e171]: “AI capabilities have crossed a threshold that fundamentally changes the urgency required to protect critical infrastructure from cyber threats, and there is no going back. Our foundational work with these models has shown we can identify and fix security vulnerabilities across hardware and software at a pace and scale previously impossible. That is a profound shift, and a clear signal that the old ways of hardening systems are no longer sufficient. Providers of technology must aggressively adopt new approaches now, and customers need to be ready to deploy. That is why Cisco joined Project Glasswing—this work is too important and too urgent to do alone.”
+                - generic [ref=e172]:
+                  - generic [ref=e173]:
+                    - paragraph [ref=e174]: Anthony Grieco
+                    - paragraph [ref=e175]: SVP & Chief Security & Trust Officer, Cisco
+                  - link "Read announcement" [ref=e176] [cursor=pointer]:
+                    - /url: https://blogs.cisco.com/news/rising-to-the-era-of-ai-powered-cyber-defense
+                    - text: Read announcement
+                    - img [ref=e177]
+              - generic:
+                - paragraph: “At AWS, we build defenses before threats emerge, from our custom silicon up through the technology stack. Security isn't a phase for us; it's continuous and embedded in everything we do. Our teams analyze over 400 trillion network flows every day for threats, and AI is central to our ability to defend at scale. We've been testing Claude Mythos Preview in our own security operations, applying it to critical codebases, where it's already helping us strengthen our code. We're bringing deep security expertise to our partnership with Anthropic and are helping to harden Claude Mythos Preview so even more organizations can advance their most ambitious work with security that sets the standard.”
+                - generic:
+                  - generic:
+                    - paragraph: Amy Herzog
+                    - paragraph: Vice President and CISO, Amazon Web Services
+                  - link "Read announcement":
+                    - /url: https://aws.amazon.com/blogs/security/building-ai-defenses-at-scale-before-the-threats-emerge
+                    - text: Read announcement
+                    - img
+              - generic:
+                - paragraph: “As we enter a phase where cybersecurity is no longer bound by purely human capacity, the opportunity to use AI responsibly to improve security and reduce risk at scale is unprecedented. Joining Project Glasswing, with access to Claude Mythos Preview, allows us to identify and mitigate risk early and augment our security and development solutions so we can better protect customers and Microsoft. When tested against CTI-REALM, our open-source security benchmark, Claude Mythos Preview showed substantial improvements compared to previous models. We look forward to partnering with Anthropic and the broader industry to improve security outcomes for all.”
+                - generic:
+                  - generic:
+                    - paragraph: Igor Tsyganskiy
+                    - paragraph: EVP of Cybersecurity and Microsoft Research, Microsoft
+                  - link "Read announcement":
+                    - /url: https://www.microsoft.com/en-us/msrc/blog/2026/04/strengthening-secure-software-global-scale-how-msrc-is-evolving-with-ai
+                    - text: Read announcement
+                    - img
+              - generic:
+                - paragraph: “The window between a vulnerability being discovered and being exploited by an adversary has collapsed—what once took months now happens in minutes with AI. Claude Mythos Preview demonstrates what is now possible for defenders at scale, and adversaries will inevitably look to exploit the same capabilities. That is not a reason to slow down; it’s a reason to move together, faster. If you want to deploy AI, you need security. That is why CrowdStrike is part of this effort from day one.”
+                - generic:
+                  - generic:
+                    - paragraph: Elia Zaitsev
+                    - paragraph: Chief Technology Officer, CrowdStrike
+                  - link "Read announcement":
+                    - /url: https://www.crowdstrike.com/en-us/blog/crowdstrike-founding-member-anthropic-mythos-frontier-model-to-secure-ai/
+                    - text: Read announcement
+                    - img
+              - generic:
+                - paragraph: “In the past, security expertise has been a luxury reserved for organizations with large security teams. Open source maintainers—whose software underpins much of the world’s critical infrastructure—have historically been left to figure out security on their own. Open source software constitutes the vast majority of code in modern systems, including the very systems AI agents use to write new software. By giving the maintainers of these critical open source codebases access to a new generation of AI models that can proactively identify and fix vulnerabilities at scale, Project Glasswing offers a credible path to changing that equation. This is how AI-augmented security can become a trusted sidekick for every maintainer, not just those who can afford expensive security teams.”
+                - generic:
+                  - generic:
+                    - paragraph: Jim Zemlin
+                    - paragraph: CEO, The Linux Foundation
+                  - link "Read announcement":
+                    - /url: https://www.linuxfoundation.org/blog/project-glasswing-gives-maintainers-advanced-ai-to-secure-open-source
+                    - text: Read announcement
+                    - img
+              - generic:
+                - paragraph: “Promoting the cybersecurity and resiliency of the financial system is central to JPMorganChase's mission, and we believe the industry is strongest when leading institutions work together on shared challenges. Project Glasswing provides a unique, early stage opportunity to evaluate next-generation AI tools for defensive cybersecurity across critical infrastructure both on our own terms and alongside respected technology leaders. We will take a rigorous, independent approach to determining how to proceed and where we can help. Anthropic's initiative reflects the kind of forward-looking, collaborative approach that this moment demands.”
+                - generic:
+                  - generic:
+                    - paragraph: Pat Opet
+                    - paragraph: Chief Information Security Officer, JPMorganChase
+              - generic:
+                - paragraph: “Google is pleased to see this cross-industry cybersecurity initiative coming together and to make Mythos Preview available to participants via Vertex AI. It's always been critical that the industry work together on emerging security issues, whether it's post-quantum cryptography, responsible zero-day disclosure, secure open source software, or defense against AI-based attacks. We have long believed that AI poses new challenges and opens new opportunities in cyber defense, which is why we've built AI-powered tools—such as Big Sleep and CodeMender—to find and fix critical software flaws. We will continue investing in our leading cybersecurity platform and a culture focused on protecting users, customers, the ecosystem, and national security.”
+                - generic:
+                  - generic:
+                    - paragraph: Heather Adkins
+                    - paragraph: VP of Security Engineering, Google
+                  - link "Read announcement":
+                    - /url: https://cloud.google.com/blog/products/ai-machine-learning/claude-mythos-preview-on-vertex-ai
+                    - text: Read announcement
+                    - img
+              - generic:
+                - paragraph: "“Over the past few weeks, we’ve had access to the Claude Mythos Preview model, using it to identify complex vulnerabilities that prior-generation models missed entirely. This is not only a game changer for finding previously hidden vulnerabilities, but it also signals a dangerous shift where attackers can soon find even more zero-day vulnerabilities and develop exploits faster than ever before. It’s clear that these models need to be in the hands of open source owners and defenders everywhere to find and fix these vulnerabilities before attackers get access. Perhaps even more important: everyone needs to prepare for AI-assisted attackers. There will be more attacks, faster attacks, and more sophisticated attacks. Now is the time to modernize cybersecurity stacks everywhere. We commend Anthropic for partnering with the industry to ensure these powerful capabilities prioritize defense first.”"
+                - generic:
+                  - generic:
+                    - paragraph: Lee Klarich
+                    - paragraph: Chief Product & Technology Officer, Palo Alto Networks
+                  - link "Read announcement":
+                    - /url: https://www.paloaltonetworks.com/perspectives/weaponized-intelligence/
+                    - text: Read announcement
+                    - img
+          - paragraph [ref=e179]: The powerful cyber capabilities of Claude Mythos Preview are a result of its strong agentic coding and reasoning skills. For example, as shown in the evaluation results below, the model has the highest scores of any model yet developed on a variety of software coding tasks.
+          - generic [ref=e180]:
+            - generic [ref=e182]:
+              - button "Agentic coding" [ref=e183] [cursor=pointer]
+              - button "Reasoning" [ref=e184] [cursor=pointer]
+              - button "Agentic search and computer use" [ref=e185] [cursor=pointer]
+            - generic [ref=e186]:
+              - generic [ref=e187]:
+                - generic [ref=e188]:
+                  - paragraph [ref=e190]: SWE-bench Pro
+                  - generic [ref=e191]:
+                    - generic [ref=e192]: Mythos Preview
+                    - generic [ref=e195]: 77.8%
+                  - generic [ref=e196]:
+                    - generic [ref=e197]: Opus 4.6
+                    - generic [ref=e200]: 53.4%
+                - generic [ref=e201]:
+                  - paragraph [ref=e203]: Terminal-Bench 2.0
+                  - generic [ref=e204]:
+                    - generic [ref=e205]: Mythos Preview
+                    - generic [ref=e208]: 82.0%
+                  - generic [ref=e209]:
+                    - generic [ref=e210]: Opus 4.6
+                    - generic [ref=e213]: 65.4%
+                - generic [ref=e214]:
+                  - paragraph [ref=e216]: SWE-bench Multimodal (internal implementation)
+                  - generic [ref=e217]:
+                    - generic [ref=e218]: Mythos Preview
+                    - generic [ref=e221]: 59.0%
+                  - generic [ref=e222]:
+                    - generic [ref=e223]: Opus 4.6
+                    - generic [ref=e226]: 27.1%
+                - generic [ref=e227]:
+                  - paragraph [ref=e229]: SWE-bench Multilingual
+                  - generic [ref=e230]:
+                    - generic [ref=e231]: Mythos Preview
+                    - generic [ref=e234]: 87.3%
+                  - generic [ref=e235]:
+                    - generic [ref=e236]: Opus 4.6
+                    - generic [ref=e239]: 77.8%
+                - generic [ref=e240]:
+                  - paragraph [ref=e242]: SWE-bench Verified
+                  - generic [ref=e243]:
+                    - generic [ref=e244]: Mythos Preview
+                    - generic [ref=e247]: 93.9%
+                  - generic [ref=e248]:
+                    - generic [ref=e249]: Opus 4.6
+                    - generic [ref=e252]: 80.8%
+                - paragraph [ref=e254]: "• SWE-bench Verified, Pro, and Multilingual: Our memorization screens flag a subset of problems in these SWE-bench evals. Excluding any problems that show signs of memorization, Mythos Preview’s margin of improvement over Opus 4.6 holds. • SWE-bench Multimodal: We used an internal implementation for both Mythos Preview and Opus 4.6. Scores are not directly comparable to public leaderboard scores. • Terminal-Bench 2.0: We used the Terminus-2 harness with adaptive thinking at maximum effort and a total task budget of 1 million tokens for each task. All experiments used 1× guaranteed/3× ceiling resource allocation averaged over five attempts per task. Mythos Preview scored 92.1% when we increased timeout limits to four hours and used the Terminal-Bench 2.1 updates."
+              - generic:
+                - generic:
+                  - generic:
+                    - paragraph: GPQA Diamond
+                  - generic:
+                    - generic: Mythos Preview
+                    - generic:
+                      - generic:
+                        - generic: 94.6%
+                  - generic:
+                    - generic: Opus 4.6
+                    - generic:
+                      - generic: 91.3%
+                - generic:
+                  - generic:
+                    - paragraph: Humanity’s Last Exam
+                  - generic:
+                    - generic: Mythos Preview without tools
+                    - generic:
+                      - generic:
+                        - generic: 56.8%
+                  - generic:
+                    - generic: Opus 4.6 without tools
+                    - generic:
+                      - generic: 40.0%
+                  - generic:
+                    - generic: Mythos Preview with tools
+                    - generic:
+                      - generic:
+                        - generic: 64.7%
+                  - generic:
+                    - generic: Opus 4.6 with tools
+                    - generic:
+                      - generic: 53.1%
+                - generic:
+                  - paragraph: "Humanity’s Last Exam: We have found Mythos still performs well on HLE at low effort, which could indicate some level of memorization."
+              - generic:
+                - generic:
+                  - generic:
+                    - paragraph: BrowseComp
+                  - generic:
+                    - generic: Mythos Preview
+                    - generic:
+                      - generic:
+                        - generic: 86.9%
+                  - generic:
+                    - generic: Opus 4.6
+                    - generic:
+                      - generic: 83.7%
+                - generic:
+                  - generic:
+                    - paragraph: OSWorld-Verified
+                  - generic:
+                    - generic: Mythos Preview
+                    - generic:
+                      - generic:
+                        - generic: 79.6%
+                  - generic:
+                    - generic: Opus 4.6
+                    - generic:
+                      - generic: 72.7%
+                - generic:
+                  - paragraph: "BrowseComp: Claude Mythos Preview scores higher than Opus 4.6 while using 4.9× fewer tokens."
+          - paragraph [ref=e255]:
+            - text: More information on the model’s capabilities, its safety properties, and its general characteristics can be found in the
+            - link "Claude Mythos Preview system card" [ref=e256] [cursor=pointer]:
+              - /url: https://anthropic.com/claude-mythos-preview-system-card
+            - text: .
+          - paragraph [ref=e257]:
+            - text: We do not plan to make Claude Mythos Preview generally available, but our eventual goal is to enable our users to safely deploy Mythos-class models at scale—for cybersecurity purposes, but also for the myriad other benefits that such highly capable models will bring. To do so, we need to make progress in developing cybersecurity (and other) safeguards that detect and block the model’s most dangerous outputs. We plan to launch new safeguards with an upcoming Claude Opus model, allowing us to improve and refine them with a model that does not pose the same level of risk as Mythos Preview
+            - superscript [ref=e258]: "3"
+            - text: .
+          - paragraph
+          - paragraph
+          - heading "Plans for Project Glasswing" [level=2] [ref=e260]
+          - paragraph
+          - paragraph [ref=e261]: Today’s announcement is the beginning of a longer-term effort. To be successful, it will require broad involvement from across the technology industry and beyond.
+          - paragraph [ref=e262]: Project Glasswing partners will receive access to Claude Mythos Preview to find and fix vulnerabilities or weaknesses in their foundational systems—systems that represent a very large portion of the world’s shared cyberattack surface. We anticipate this work will focus on tasks like local vulnerability detection, black box testing of binaries, securing endpoints, and penetration testing of systems.
+          - paragraph [ref=e263]: Anthropic’s commitment of $100M in model usage credits to Project Glasswing and additional participants will cover substantial usage throughout this research preview. Afterward, Claude Mythos Preview will be available to participants at $25/$125 per million input/output tokens (participants can access the model on the Claude API, Amazon Bedrock, Google Cloud’s Vertex AI, and Microsoft Foundry).
+          - paragraph [ref=e264]:
+            - text: In addition to our commitment of model usage credits, we’ve donated $2.5M to Alpha-Omega and OpenSSF through the Linux Foundation, and $1.5M to the Apache Software Foundation to enable the maintainers of open-source software to respond to this changing landscape (maintainers interested in access can apply through the
+            - link "Claude for Open Source" [ref=e265] [cursor=pointer]:
+              - /url: https://claude.com/contact-sales/claude-for-oss
+            - text: program).
+          - paragraph [ref=e266]: "We intend for this work to grow in scope and continue for many months, and we’ll share as much as we can so that other organizations can apply the lessons to their own security. Partners will, to the extent they’re able, share information and best practices with each other; within 90 days, Anthropic will report publicly on what we’ve learned, as well as the vulnerabilities fixed and improvements made that can be disclosed. We will also collaborate with leading security organizations to produce a set of practical recommendations for how security practices should evolve in the AI era. This will potentially include:"
+          - list [ref=e267]:
+            - listitem [ref=e268]: Vulnerability disclosure processes;
+            - listitem [ref=e269]: Software update processes;
+            - listitem [ref=e270]: Open-source and supply-chain security;
+            - listitem [ref=e271]: Software development lifecycle and secure-by-design practices;
+            - listitem [ref=e272]: Standards for regulated industries;
+            - listitem [ref=e273]: Triage scaling and automation; and
+            - listitem [ref=e274]: Patching automation.
+          - paragraph [ref=e275]: Anthropic has also been in ongoing discussions with US government officials about Claude Mythos Preview and its offensive and defensive cyber capabilities. As we noted above, securing critical infrastructure is a top national security priority for democratic countries—the emergence of these cyber capabilities is another reason why the US and its allies must maintain a decisive lead in AI technology. Governments have an essential role to play in helping maintain that lead, and in both assessing and mitigating the national security risks associated with AI models. We are ready to work with local, state, and federal representatives to assist in these tasks.
+          - paragraph [ref=e276]: We are hopeful that Project Glasswing can seed a larger effort across industry and the public sector, with all parties helping to address the biggest questions around the impact of powerful models on security. We invite other AI industry members to join us in helping to set the standards for the industry. In the medium term, an independent, third-party body—one that can bring together private- and public-sector organizations—might be the ideal home for continued work on these large-scale cybersecurity projects.
+      - generic [ref=e278]:
+        - heading "APPENDIX" [level=2] [ref=e279]
+        - list [ref=e281]:
+          - listitem [ref=e282]:
+            - text: The project is named for the glasswing butterfly,
+            - link "Greta oto" [ref=e283] [cursor=pointer]:
+              - /url: https://en.wikipedia.org/wiki/Greta_oto
+              - emphasis [ref=e284]: Greta oto
+            - text: ". The metaphor can be applied in two ways: the butterfly’s transparent wings let it hide in plain sight, much like the vulnerabilities discussed in this post; they also allow it to evade harm—like the transparency we’re advocating for in our approach."
+          - listitem [ref=e285]: "From the Ancient Greek for “utterance” or “narrative”: the system of stories through which civilizations made sense of the world."
+          - listitem [ref=e286]: Security professionals whose legitimate work is affected by these safeguards will be able to apply to an upcoming Cyber Verification Program.
+  - contentinfo "Site footer" [ref=e287]:
+    - generic [ref=e288]:
+      - link "Return to homepage" [ref=e290] [cursor=pointer]:
+        - /url: /
+        - img [ref=e291]
+      - navigation "Footer navigation" [ref=e293]:
+        - generic [ref=e294]:
+          - generic [ref=e295]:
+            - heading "Products" [level=3] [ref=e296]
+            - list [ref=e297]:
+              - listitem [ref=e298]:
+                - link "Claude" [ref=e299] [cursor=pointer]:
+                  - /url: https://claude.com/product/overview
+              - listitem [ref=e300]:
+                - link "Claude Code" [ref=e301] [cursor=pointer]:
+                  - /url: https://claude.com/product/claude-code
+              - listitem [ref=e302]:
+                - link "Claude Code Enterprise" [ref=e303] [cursor=pointer]:
+                  - /url: https://claude.com/product/claude-code/enterprise
+              - listitem [ref=e304]:
+                - link "Claude Code Security" [ref=e305] [cursor=pointer]:
+                  - /url: https://claude.com/claude-code-security
+              - listitem [ref=e306]:
+                - link "Claude Cowork" [ref=e307] [cursor=pointer]:
+                  - /url: https://claude.com/product/cowork
+              - listitem [ref=e308]:
+                - link "Claude for Chrome" [ref=e309] [cursor=pointer]:
+                  - /url: https://claude.com/chrome
+              - listitem [ref=e310]:
+                - link "Claude for Excel" [ref=e311] [cursor=pointer]:
+                  - /url: https://claude.com/claude-for-excel
+              - listitem [ref=e312]:
+                - link "Claude for PowerPoint" [ref=e313] [cursor=pointer]:
+                  - /url: https://claude.com/claude-for-powerpoint
+              - listitem [ref=e314]:
+                - link "Claude for Slack" [ref=e315] [cursor=pointer]:
+                  - /url: https://claude.com/claude-for-slack
+              - listitem [ref=e316]:
+                - link "Skills" [ref=e317] [cursor=pointer]:
+                  - /url: https://www.claude.com/skills
+              - listitem [ref=e318]:
+                - link "Max plan" [ref=e319] [cursor=pointer]:
+                  - /url: https://claude.com/pricing/max
+              - listitem [ref=e320]:
+                - link "Team plan" [ref=e321] [cursor=pointer]:
+                  - /url: https://claude.com/pricing/team
+              - listitem [ref=e322]:
+                - link "Enterprise plan" [ref=e323] [cursor=pointer]:
+                  - /url: https://claude.com/pricing/enterprise
+              - listitem [ref=e324]:
+                - link "Download app" [ref=e325] [cursor=pointer]:
+                  - /url: https://claude.ai/download
+              - listitem [ref=e326]:
+                - link "Pricing" [ref=e327] [cursor=pointer]:
+                  - /url: https://claude.com/pricing
+              - listitem [ref=e328]:
+                - link "Log in to Claude" [ref=e329] [cursor=pointer]:
+                  - /url: https://claude.ai/
+          - generic [ref=e330]:
+            - heading "Models" [level=3] [ref=e331]
+            - list [ref=e332]:
+              - listitem [ref=e333]:
+                - link "Mythos preview" [ref=e334] [cursor=pointer]:
+                  - /url: https://www.anthropic.com/glasswing
+              - listitem [ref=e335]:
+                - link "Opus" [ref=e336] [cursor=pointer]:
+                  - /url: https://www.anthropic.com/claude/opus
+              - listitem [ref=e337]:
+                - link "Sonnet" [ref=e338] [cursor=pointer]:
+                  - /url: https://www.anthropic.com/claude/sonnet
+              - listitem [ref=e339]:
+                - link "Haiku" [ref=e340] [cursor=pointer]:
+                  - /url: https://www.anthropic.com/claude/haiku
+        - generic [ref=e341]:
+          - generic [ref=e342]:
+            - heading "Solutions" [level=3] [ref=e343]
+            - list [ref=e344]:
+              - listitem [ref=e345]:
+                - link "AI agents" [ref=e346] [cursor=pointer]:
+                  - /url: https://claude.com/solutions/agents
+              - listitem [ref=e347]:
+                - link "Code modernization" [ref=e348] [cursor=pointer]:
+                  - /url: https://claude.com/solutions/code-modernization
+              - listitem [ref=e349]:
+                - link "Coding" [ref=e350] [cursor=pointer]:
+                  - /url: https://claude.com/solutions/coding
+              - listitem [ref=e351]:
+                - link "Customer support" [ref=e352] [cursor=pointer]:
+                  - /url: https://claude.com/solutions/customer-support
+              - listitem [ref=e353]:
+                - link "Education" [ref=e354] [cursor=pointer]:
+                  - /url: https://claude.com/solutions/education
+              - listitem [ref=e355]:
+                - link "Financial services" [ref=e356] [cursor=pointer]:
+                  - /url: https://claude.com/solutions/financial-services
+              - listitem [ref=e357]:
+                - link "Government" [ref=e358] [cursor=pointer]:
+                  - /url: https://claude.com/solutions/government
+              - listitem [ref=e359]:
+                - link "Healthcare" [ref=e360] [cursor=pointer]:
+                  - /url: https://claude.com/solutions/healthcare
+              - listitem [ref=e361]:
+                - link "Life sciences" [ref=e362] [cursor=pointer]:
+                  - /url: https://claude.com/solutions/life-sciences
+              - listitem [ref=e363]:
+                - link "Nonprofits" [ref=e364] [cursor=pointer]:
+                  - /url: https://claude.com/solutions/nonprofits
+              - listitem [ref=e365]:
+                - link "Security" [ref=e366] [cursor=pointer]:
+                  - /url: https://claude.com/solutions/security
+          - generic [ref=e367]:
+            - heading "Claude Platform" [level=3] [ref=e368]
+            - list [ref=e369]:
+              - listitem [ref=e370]:
+                - link "Overview" [ref=e371] [cursor=pointer]:
+                  - /url: https://claude.com/platform/api
+              - listitem [ref=e372]:
+                - link "Developer docs" [ref=e373] [cursor=pointer]:
+                  - /url: https://platform.claude.com/docs
+              - listitem [ref=e374]:
+                - link "Pricing" [ref=e375] [cursor=pointer]:
+                  - /url: https://claude.com/pricing#api
+              - listitem [ref=e376]:
+                - link "Marketplace" [ref=e377] [cursor=pointer]:
+                  - /url: https://claude.com/platform/marketplace
+              - listitem [ref=e378]:
+                - link "Regional compliance" [ref=e379] [cursor=pointer]:
+                  - /url: https://claude.com/regional-compliance
+              - listitem [ref=e380]:
+                - link "Amazon Bedrock" [ref=e381] [cursor=pointer]:
+                  - /url: https://claude.com/partners/amazon-bedrock
+              - listitem [ref=e382]:
+                - link "Google Cloud’s Vertex AI" [ref=e383] [cursor=pointer]:
+                  - /url: https://claude.com/partners/google-cloud-vertex-ai
+              - listitem [ref=e384]:
+                - link "Microsoft Foundry" [ref=e385] [cursor=pointer]:
+                  - /url: https://claude.com/partners/microsoft-foundry
+              - listitem [ref=e386]:
+                - link "Console login" [ref=e387] [cursor=pointer]:
+                  - /url: https://platform.claude.com/
+        - generic [ref=e388]:
+          - generic [ref=e389]:
+            - heading "Resources" [level=3] [ref=e390]
+            - list [ref=e391]:
+              - listitem [ref=e392]:
+                - link "Blog" [ref=e393] [cursor=pointer]:
+                  - /url: https://claude.com/blog
+              - listitem [ref=e394]:
+                - link "Claude partner network" [ref=e395] [cursor=pointer]:
+                  - /url: https://claude.com/partners
+              - listitem [ref=e396]:
+                - link "Community" [ref=e397] [cursor=pointer]:
+                  - /url: https://claude.com/community
+              - listitem [ref=e398]:
+                - link "Connectors" [ref=e399] [cursor=pointer]:
+                  - /url: https://claude.com/connectors
+              - listitem [ref=e400]:
+                - link "Courses" [ref=e401] [cursor=pointer]:
+                  - /url: /learn
+              - listitem [ref=e402]:
+                - link "Customer stories" [ref=e403] [cursor=pointer]:
+                  - /url: https://claude.com/customers
+              - listitem [ref=e404]:
+                - link "Engineering at Anthropic" [ref=e405] [cursor=pointer]:
+                  - /url: /engineering
+              - listitem [ref=e406]:
+                - link "Events" [ref=e407] [cursor=pointer]:
+                  - /url: /events
+              - listitem [ref=e408]:
+                - link "Inside Claude Code" [ref=e409] [cursor=pointer]:
+                  - /url: /product/claude-code
+              - listitem [ref=e410]:
+                - link "Inside Claude Cowork" [ref=e411] [cursor=pointer]:
+                  - /url: /product/claude-cowork
+              - listitem [ref=e412]:
+                - link "Plugins" [ref=e413] [cursor=pointer]:
+                  - /url: https://claude.com/plugins
+              - listitem [ref=e414]:
+                - link "Powered by Claude" [ref=e415] [cursor=pointer]:
+                  - /url: https://claude.com/partners/powered-by-claude
+              - listitem [ref=e416]:
+                - link "Service partners" [ref=e417] [cursor=pointer]:
+                  - /url: https://claude.com/partners/services
+              - listitem [ref=e418]:
+                - link "Startups program" [ref=e419] [cursor=pointer]:
+                  - /url: https://claude.com/programs/startups
+              - listitem [ref=e420]:
+                - link "Tutorials" [ref=e421] [cursor=pointer]:
+                  - /url: https://claude.com/resources/tutorials
+              - listitem [ref=e422]:
+                - link "Use cases" [ref=e423] [cursor=pointer]:
+                  - /url: https://claude.com/resources/use-cases
+          - generic [ref=e424]:
+            - heading "Help and security" [level=3] [ref=e425]
+            - list [ref=e426]:
+              - listitem [ref=e427]:
+                - link "Availability" [ref=e428] [cursor=pointer]:
+                  - /url: https://www.anthropic.com/supported-countries
+              - listitem [ref=e429]:
+                - link "Status" [ref=e430] [cursor=pointer]:
+                  - /url: https://status.anthropic.com/
+              - listitem [ref=e431]:
+                - link "Support center" [ref=e432] [cursor=pointer]:
+                  - /url: https://support.claude.com/en/
+        - generic [ref=e433]:
+          - generic [ref=e434]:
+            - heading "Company" [level=3] [ref=e435]
+            - list [ref=e436]:
+              - listitem [ref=e437]:
+                - link "Anthropic" [ref=e438] [cursor=pointer]:
+                  - /url: /company
+              - listitem [ref=e439]:
+                - link "Careers" [ref=e440] [cursor=pointer]:
+                  - /url: /careers
+              - listitem [ref=e441]:
+                - link "Economic Futures" [ref=e442] [cursor=pointer]:
+                  - /url: /economic-index
+              - listitem [ref=e443]:
+                - link "Research" [ref=e444] [cursor=pointer]:
+                  - /url: /research
+              - listitem [ref=e445]:
+                - link "News" [ref=e446] [cursor=pointer]:
+                  - /url: /news
+              - listitem [ref=e447]:
+                - link "Claude’s Constitution" [ref=e448] [cursor=pointer]:
+                  - /url: /constitution
+              - listitem [ref=e449]:
+                - link "Responsible Scaling Policy" [ref=e450] [cursor=pointer]:
+                  - /url: https://www.anthropic.com/news/announcing-our-updated-responsible-scaling-policy
+              - listitem [ref=e451]:
+                - link "Security and compliance" [ref=e452] [cursor=pointer]:
+                  - /url: https://trust.anthropic.com/
+              - listitem [ref=e453]:
+                - link "Transparency" [ref=e454] [cursor=pointer]:
+                  - /url: /transparency
+          - generic [ref=e455]:
+            - heading "Terms and policies" [level=3] [ref=e456]
+            - list [ref=e457]:
+              - listitem [ref=e458]:
+                - link "Privacy policy" [ref=e459] [cursor=pointer]:
+                  - /url: https://www.anthropic.com/legal/privacy
+              - listitem [ref=e460]:
+                - link "Consumer health data privacy policy" [ref=e461] [cursor=pointer]:
+                  - /url: https://www.anthropic.com/legal/consumer-health-data-privacy-policy
+              - listitem [ref=e462]:
+                - link "Responsible disclosure policy" [ref=e463] [cursor=pointer]:
+                  - /url: https://www.anthropic.com/responsible-disclosure-policy
+              - listitem [ref=e464]:
+                - 'link "Terms of service: Commercial" [ref=e465] [cursor=pointer]':
+                  - /url: https://www.anthropic.com/legal/commercial-terms
+              - listitem [ref=e466]:
+                - 'link "Terms of service: Consumer" [ref=e467] [cursor=pointer]':
+                  - /url: https://www.anthropic.com/legal/consumer-terms
+              - listitem [ref=e468]:
+                - link "Usage policy" [ref=e469] [cursor=pointer]:
+                  - /url: https://www.anthropic.com/legal/aup
+      - generic [ref=e470]:
+        - contentinfo [ref=e471]: © 2026 Anthropic PBC
+        - navigation "Social media links" [ref=e472]:
+          - listitem [ref=e473]:
+            - link "Visit our LinkedIn page" [ref=e474] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/anthropicresearch
+              - img [ref=e475]
+          - listitem [ref=e477]:
+            - link "Visit our X (formerly Twitter) profile" [ref=e478] [cursor=pointer]:
+              - /url: https://x.com/AnthropicAI
+              - img [ref=e479]
+          - listitem [ref=e481]:
+            - link "Visit our YouTube channel" [ref=e482] [cursor=pointer]:
+              - /url: https://www.youtube.com/@anthropic-ai
+              - img [ref=e483]
+  - alert [ref=e485]

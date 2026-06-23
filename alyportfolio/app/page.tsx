@@ -19,10 +19,7 @@ export default function Home() {
   };
 
   return (
-    <motion.div
-      exit={{ opacity: 0, transition: { duration: 0.15 } }}
-      className="flex flex-col gap-16"
-    >
+    <div className="flex flex-col gap-16">
       <section>
         <h1 className="text-5xl font-bold text-white mb-6 tracking-tight font-mono">
           Aly Gaber
@@ -78,7 +75,7 @@ export default function Home() {
             >
               <motion.h3
                 layoutId={project.layoutIdTitle}
-                transition={{ type: "tween", duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
+                transition={{ type: "spring", stiffness: 500, damping: 38 }}
                 className="text-lg font-bold text-white mb-2 font-mono group-hover:text-zinc-300 transition-colors"
               >
                 {project.title}
@@ -115,7 +112,7 @@ export default function Home() {
             >
               <motion.h3
                 layoutId={course.layoutIdTitle}
-                transition={{ type: "tween", duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
+                transition={{ type: "spring", stiffness: 500, damping: 38 }}
                 className="text-lg font-bold text-white mb-2 font-mono group-hover:text-zinc-300 transition-colors"
               >
                 {course.title}
@@ -135,6 +132,6 @@ export default function Home() {
           </p>
         </div>
       </footer>
-    </motion.div>
+    </div>
   );
 }
