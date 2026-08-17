@@ -19,14 +19,18 @@ export default function Home() {
   };
 
   return (
-    <motion.div exit={{ opacity: 0, transition: { duration: 0.06 } }} className="flex flex-col gap-16">
+    <motion.div
+      exit={{ opacity: 0, transition: { duration: 0.06 } }}
+      className="flex flex-col gap-16"
+    >
       <section>
         <h1 className="text-5xl font-bold text-white mb-6 tracking-tight font-mono">
           Aly Gaber
         </h1>
 
         <p className="text-lg leading-relaxed text-zinc-400 mb-6 max-w-2xl">
-          I  build real products. Fintech platforms, analytics dashboards, full-stack systems - shipped, deployed, live.{" "}
+          SWE and Math @ McGill. I write interpreters, servers, and the systems
+          underneath. Full-stack when it ships, C when it matters.{" "}
         </p>
 
         <div className="flex flex-col gap-4">
@@ -75,7 +79,11 @@ export default function Home() {
             >
               <motion.h3
                 layoutId={project.layoutIdTitle}
-                transition={{ type: "tween", duration: 0.3, ease: [0.32, 0.72, 0, 1] }}
+                transition={{
+                  type: "tween",
+                  duration: 0.3,
+                  ease: [0.32, 0.72, 0, 1],
+                }}
                 className="text-lg font-bold text-white mb-2 font-mono group-hover:text-zinc-300 transition-colors"
               >
                 {project.title}
@@ -112,14 +120,16 @@ export default function Home() {
             >
               <motion.h3
                 layoutId={course.layoutIdTitle}
-                transition={{ type: "tween", duration: 0.3, ease: [0.32, 0.72, 0, 1] }}
+                transition={{
+                  type: "tween",
+                  duration: 0.3,
+                  ease: [0.32, 0.72, 0, 1],
+                }}
                 className="text-lg font-bold text-white mb-2 font-mono group-hover:text-zinc-300 transition-colors"
               >
                 {course.title}
               </motion.h3>
-              <p className="text-sm text-zinc-400">
-                {course.description}
-              </p>
+              <p className="text-sm text-zinc-400">{course.description}</p>
             </TransitionLink>
           ))}
         </div>
