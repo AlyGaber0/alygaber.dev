@@ -9,6 +9,14 @@ export const projectsData = [
     layoutIdTitle: "project-title-gabl",
   },
   {
+    id: "kev",
+    title: "Kev",
+    description: "A TCP key-value store in C, single-threaded and non-blocking on poll().",
+    tags: ["C", "Sockets", "TCP", "Systems"],
+    href: "/projects/kev",
+    layoutIdTitle: "project-title-kev",
+  },
+  {
     id: "vexo",
     title: "Vexo",
     description: "Fintech platform for stock research, news, AI-generated insights, and brokerage trading.",
