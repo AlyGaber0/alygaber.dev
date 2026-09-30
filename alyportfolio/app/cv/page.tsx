@@ -3,14 +3,29 @@
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
 
-const skillsData = {
-  languages: ["JavaScript", "HTML", "CSS", "Python", "C", "Java", "SQL"],
-  technologies: [
-    "React", "Next.js", "Tailwind CSS", "Supabase", "PostgreSQL",
-    "Stripe", "Clerk", "Node.js", "REST APIs", "Flask",
-    "Vertex AI", "GCP", "Git", "Linux",
-  ],
-};
+const skillsData = [
+  {
+    label: "Languages",
+    items: [
+      "C", "C++", "Python", "Java", "SQL", "TypeScript",
+      "JavaScript", "ARM Assembly", "VHDL",
+    ],
+  },
+  {
+    label: "Tools & Infra",
+    items: [
+      "Git", "Make", "Docker", "GCP (Cloud Functions, Vertex AI)",
+      "PostgreSQL", "BigQuery", "Linux",
+    ],
+  },
+  {
+    label: "Web & Frameworks",
+    items: [
+      "React", "Next.js", "Node.js", "Tailwind CSS", "Spring Boot",
+      "Flask", "Supabase", "REST APIs",
+    ],
+  },
+];
 
 const educationData = [
   {
@@ -19,7 +34,8 @@ const educationData = [
     date: "Sep 2024 - May 2028 (Expected)",
     bullets: [
       "Minor in Mathematics, Co-op Program.",
-      "Relevant Coursework: Applied Machine Learning, Data Structures & Algorithms, Software Systems.",
+      "Systems & Software Coursework: Compiler Design (W27), Computer Architecture (W27), Computer Organization, Digital Logic, Intro to Software Systems (C, Unix), Signals and Networks, Data Structures and Algorithms, Software Engineering (Java, OOP), Applied Machine Learning.",
+      "Mathematics Coursework: Real Analysis, Linear Algebra I & II, Probability and Statistics.",
     ],
     tags: [],
   },
@@ -31,20 +47,20 @@ const experienceData = [
     company: "Vexo Labs Inc.",
     date: "Jan 2026 - Apr 2026",
     bullets: [
-      "Built 4 core customer-facing pages end-to-end (home, login, signup, market overview) in Next.js, TypeScript, and Tailwind CSS as part of a 6-person engineering team.",
-      "Designed the Supabase users table handling authentication and profile data; wrote queries and integrated Supabase Auth with protected routing and session management across the frontend.",
+      "Built four customer-facing pages end to end at an early-stage fintech, including a live market dashboard rendering real-time prices across a broad ticker list alongside the day's top three gainers and losers.",
+      "Integrated those pages with a Supabase (PostgreSQL) backend, writing the queries behind each view against the team's schema and contributing to schema and data-fetching decisions with the founding team.",
     ],
-    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Supabase"],
+    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Supabase", "PostgreSQL"],
   },
   {
     role: "Software Engineering Intern",
     company: "Darwinz AI (TheDar.AI) - Cairo, EG",
     date: "May 2025 - Jul 2025",
     bullets: [
-      "Built and deployed maintainable and scalable Flask RESTful APIs on Google Cloud, automating PDF processing with Gemini AI for translation and TTS; improved system reliability through team code reviews.",
-      "Built a cloud-native Machine Learning pipeline using Vertex AI, BigQuery, and Cloud Functions automating document ingestion, OCR, translation, summarization, and metadata storage for downstream analysis.",
+      "Built a document pipeline on GCP (Cloud Functions, Vertex AI) that ran PDFs through OCR, translation, and summarization, then loaded structured metadata into BigQuery for SQL analysis.",
+      "Wrote and deployed the project's Flask REST services on Google Cloud, containerized with Docker; improved reliability through team code reviews.",
     ],
-    tags: ["Flask", "Python", "Google Cloud", "Vertex AI", "BigQuery"],
+    tags: ["Flask", "Python", "Google Cloud", "Vertex AI", "BigQuery", "Docker"],
   },
 ];
 
@@ -54,7 +70,7 @@ const extracurricularData = [
     company: "McGill Squash Team",
     date: "Sep 2024 - Present",
     bullets: [
-      "Men's B National Champion; compete and train 15+ hours/week alongside a full academic workload with an undefeated record.",
+      "Men's B National Champion with an undefeated record; compete and train 15+ hours/week alongside a full academic workload.",
     ],
     tags: [],
   },
@@ -152,36 +168,23 @@ export default function CvPage() {
             Technical Skills
           </h2>
           <div className="flex flex-col gap-4">
-            <div className="flex items-start gap-4">
-              <span className="text-xs font-mono text-zinc-500 w-24 shrink-0 mt-1">
-                Languages
-              </span>
-              <div className="flex flex-wrap gap-2">
-                {skillsData.languages.map((skill) => (
-                  <span
-                    key={skill}
-                    className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded text-xs font-mono text-zinc-300"
-                  >
-                    {skill}
-                  </span>
-                ))}
+            {skillsData.map((group) => (
+              <div key={group.label} className="flex items-start gap-4">
+                <span className="text-xs font-mono text-zinc-500 w-24 shrink-0 mt-1">
+                  {group.label}
+                </span>
+                <div className="flex flex-wrap gap-2">
+                  {group.items.map((skill) => (
+                    <span
+                      key={skill}
+                      className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded text-xs font-mono text-zinc-300"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <span className="text-xs font-mono text-zinc-500 w-24 shrink-0 mt-1">
-                Technologies
-              </span>
-              <div className="flex flex-wrap gap-2">
-                {skillsData.technologies.map((skill) => (
-                  <span
-                    key={skill}
-                    className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded text-xs font-mono text-zinc-300"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
+            ))}
           </div>
         </section>
 

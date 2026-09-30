@@ -9,10 +9,18 @@ export default function AboutPage() {
         <h1 className="text-4xl font-bold text-white mb-6 font-mono">
           About
         </h1>
-        <p className="text-lg leading-relaxed text-zinc-400">
-          SWE and Math at McGill, based in Montreal. Systems and low-level work
-          is what I reach for first, full-stack is what I&apos;ve shipped most.
-        </p>
+        <div className="flex items-start gap-5">
+          <img
+            src="/aly.jpg"
+            alt="Aly Gaber"
+            className="w-20 h-20 rounded-full object-cover shrink-0 border border-zinc-800"
+          />
+          <p className="text-lg leading-relaxed text-zinc-400">
+            SWE and Math at McGill, based in Montreal. Systems and low-level
+            work is what I reach for first, full-stack is what I&apos;ve shipped
+            most.
+          </p>
+        </div>
         <hr className="border-zinc-800 mt-3" />
       </section>
 

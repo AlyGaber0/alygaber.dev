@@ -84,12 +84,12 @@ export default function GablProject() {
         <CommitHeatmap />
 
         <a
-          href="https://github.com/AlyGaber0/Gabl"
+          href="https://alygaber0.github.io/Gabl/"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 bg-zinc-100 text-zinc-900 px-4 py-2 rounded-lg text-sm font-medium hover:bg-white transition-colors no-underline"
         >
-          View on GitHub
+          View Documentation
         </a>
       </div>
     </motion.div>
