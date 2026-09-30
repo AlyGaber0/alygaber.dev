@@ -87,7 +87,7 @@ const extracurricularData = [
   {
     role: "Operations Analyst",
     company: "McGill Engineering Students in Finance",
-    date: "Feb 2025 - Present",
+    date: "Feb 2025 - Apr 2026",
     bullets: [
       "Coordinating industry partnerships and guest speaker events.",
       "Facilitated multiple company office visits across Montreal.",
